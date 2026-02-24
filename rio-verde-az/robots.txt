@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://rio-verde-az.waterdamageremovalbrooklyn.com/sitemap.xml

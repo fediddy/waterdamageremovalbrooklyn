@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://mount-lemmon-az.waterdamageremovalbrooklyn.com/sitemap.xml

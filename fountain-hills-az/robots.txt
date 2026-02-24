@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://fountain-hills-az.waterdamageremovalbrooklyn.com/sitemap.xml

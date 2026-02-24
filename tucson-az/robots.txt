@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://tucson-az.waterdamageremovalbrooklyn.com/sitemap.xml

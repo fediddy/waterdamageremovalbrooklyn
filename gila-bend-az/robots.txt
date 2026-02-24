@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://gila-bend-az.waterdamageremovalbrooklyn.com/sitemap.xml

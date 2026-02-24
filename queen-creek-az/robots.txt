@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://queen-creek-az.waterdamageremovalbrooklyn.com/sitemap.xml

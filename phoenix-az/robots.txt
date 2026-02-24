@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://phoenix-az.waterdamageremovalbrooklyn.com/sitemap.xml

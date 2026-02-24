@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 70" width="180" height="70">
+  <rect width="180" height="70" rx="6" fill="#1B5E20"/>
+  <!-- Shield -->
+  <g transform="translate(12,8)">
+    <path d="M22 4 L40 10 L40 28 Q40 44 22 52 Q4 44 4 28 L4 10 Z" fill="none" stroke="#fff" stroke-width="2"/>
+    <path d="M14 26 L20 32 L32 18" fill="none" stroke="#4CAF50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Text -->
+  <text x="60" y="28" font-family="Arial,sans-serif" font-size="13" fill="#fff" font-weight="bold">LICENSED</text>
+  <text x="60" y="42" font-family="Arial,sans-serif" font-size="8" fill="#A5D6A7">&amp;</text>
+  <text x="60" y="55" font-family="Arial,sans-serif" font-size="13" fill="#fff" font-weight="bold">INSURED</text>
+</svg>

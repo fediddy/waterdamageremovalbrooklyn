@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://poston-az.waterdamageremovalbrooklyn.com/sitemap.xml
