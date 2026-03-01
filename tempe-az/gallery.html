@@ -4,35 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="custom">
-  <title>Project Gallery | Water Damage Repair Company of Tempe - Tempe Water Damage</title>
-  <meta name="description" content="Project Gallery - Water Damage Repair Company of Tempe in Tempe, AZ. Professional water damage services. Call (800) 819-6517.">
+  <title>Our Work in Tempe | Water Damage Repair Company of Tempe - Tempe Water Damage</title>
+  <meta name="description" content="Our Work in Tempe - Water Damage Repair Company of Tempe in Tempe, AZ. Professional water damage services. Call (800) 819-6517.">
   <!-- ASSEMBLED-PAGE v1 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@600;700;800&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
   <style>
   :root {
-    --color-primary: #1B4E8A;
-    --color-primary-dark: #0F2E52;
-    --color-secondary: #3A7BD5;
-    --color-accent: #E8751A;
+    --color-primary: #1B2A4A;
+    --color-primary-dark: #0F1B33;
+    --color-secondary: #263B63;
+    --color-accent: #F2C94C;
     --color-bg-light: #ffffff;
-    --color-bg-alt: #F5F7FA;
-    --color-bg-dark: #0F2E52;
-    --color-text: #374151;
+    --color-bg-alt: #F9F6ED;
+    --color-bg-dark: #0F1B33;
+    --color-text: #333333;
     --color-text-light: #666666;
     --color-text-on-dark: #ffffff;
     --color-border: #e0e0e0;
-    --font-heading: 'Inter', 'Segoe UI', sans-serif;
-    --font-body: 'Inter', 'Segoe UI', sans-serif;
+    --font-heading: 'Geologica', 'Segoe UI', sans-serif;
+    --font-body: 'Montserrat', 'Segoe UI', sans-serif;
     --font-size-h1: clamp(2rem, 4vw, 3rem);
     --font-size-h2: clamp(1.5rem, 3vw, 2.25rem);
     --font-size-h3: clamp(1.25rem, 2.5vw, 1.75rem);
     --font-size-body: 1rem;
     --section-padding: clamp(3rem, 6vw, 5rem);
     --container-max: 1200px;
-    --card-radius: 8px;
-    --btn-radius: 6px;
+    --card-radius: 20px;
+    --btn-radius: 8px;
     --shadow-card: 0 4px 6px rgba(0,0,0,0.07);
     --shadow-hover: 0 8px 25px rgba(0,0,0,0.12);
   }
@@ -42,21 +42,110 @@
   img { max-width:100%; height:auto; }
   a { transition:color 0.2s; }
 
-  /* Responsive */
+  /* Responsive: Tablet */
+  @media (max-width: 1024px) {
+    :root { --section-padding: clamp(2.5rem, 5vw, 4rem); }
+  }
+
+  /* Hamburger button (hidden on desktop) */
+  .hamburger-btn{display:none;background:none;border:none;cursor:pointer;padding:8px;z-index:1002;}
+  .hamburger-btn span{display:block;width:26px;height:3px;margin:5px 0;background:#1B2A4A;border-radius:2px;transition:all .3s ease;}
+  .hamburger-btn.open span:nth-child(1){transform:rotate(45deg) translate(6px,6px);}
+  .hamburger-btn.open span:nth-child(2){opacity:0;}
+  .hamburger-btn.open span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px);}
+
+  /* Mobile menu (hidden on desktop) */
+  .mobile-menu{display:none;background:#fff;padding:20px;border-top:1px solid #eee;}
+  .mobile-menu a{display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;}
+  .mobile-phone-cta{display:block;text-align:center;background:#F2C94C;color:#fff!important;padding:14px;border-radius:var(--btn-radius);margin-top:12px;text-decoration:none;font-weight:700;border-bottom:none!important;}
+
+  /* Responsive: Mobile */
   @media (max-width: 768px) {
+    :root {
+      --font-size-h1: clamp(1.75rem, 5vw, 2.5rem);
+      --font-size-h2: clamp(1.35rem, 4vw, 1.75rem);
+      --font-size-h3: clamp(1.1rem, 3vw, 1.35rem);
+      --section-padding: clamp(2rem, 5vw, 3rem);
+    }
     .desktop-nav { display:none !important; }
     .hamburger-btn { display:block !important; }
     .mobile-menu.open { display:block !important; }
+    .trust-metrics-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
+    .hero-section { min-height: auto !important; }
+    .hero-inner { padding: 40px 16px !important; }
+    .hero-stats-card { display: none !important; }
+    .hero-buttons a { padding: 14px 24px !important; font-size: 16px !important; }
+    .services-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
+    .content-grid { grid-template-columns: 1fr !important; }
     section [style*="grid-template-columns: repeat(4"] { grid-template-columns: repeat(2, 1fr) !important; }
     section [style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
     section [style*="display:flex;gap:32px"] { flex-direction: column !important; }
     section [style*="flex:0 0 300px"] { flex: 1 1 100% !important; }
+    section [style*="grid-template-columns:repeat(auto-fit, minmax(2"] { grid-template-columns: 1fr !important; }
+    section [style*="grid-template-columns:repeat(auto-fit, minmax(3"] { grid-template-columns: 1fr !important; }
+    img[style*="height:300px"] { height: 200px !important; }
+    img[style*="height:400px"] { height: 250px !important; }
+    img[style*="height:280px"] { height: 200px !important; }
+    iframe[style*="height:400"] { height: 250px !important; }
+    a[style*="padding:16px 36px"] { padding: 14px 24px !important; font-size: 16px !important; }
+    a[style*="padding:16px 32px"] { padding: 14px 24px !important; font-size: 16px !important; }
+    section[style*="padding:60px"] { padding: 40px 0 !important; }
+  }
+
+  /* Responsive: Small Phone */
+  @media (max-width: 480px) {
+    :root {
+      --font-size-h1: clamp(1.5rem, 6vw, 2rem);
+      --font-size-h2: clamp(1.2rem, 5vw, 1.5rem);
+      --font-size-h3: clamp(1rem, 4vw, 1.25rem);
+    }
+    .trust-metrics-grid { grid-template-columns: 1fr 1fr !important; gap: 8px !important; padding: 16px !important; }
+    .trust-metrics-grid > div { font-size: 12px !important; }
+    .trust-metrics-grid > div > div:first-child { font-size: 22px !important; }
+    .hero-buttons { flex-direction: column !important; }
+    .hero-buttons a { width: 100% !important; text-align: center !important; justify-content: center !important; }
+    header > div { height: 56px !important; }
+    header a[style*="font-size:22px"] { font-size: 18px !important; }
   }
 
   /* FAQ */
   .faq-item.open .faq-answer { max-height: 500px !important; }
+
+  
+
+  
+
+  
   </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Water Damage Repair Company of Tempe","hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"Google Guaranteed","description":"Google Guaranteed Business"},{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"Licensed & Insured","description":"Licensed and Insured"},{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"IICRC Certified","description":"IICRC Certified Firm - Water Damage Restoration"}]}</script><link rel="canonical" href="https://tempe-az.waterdamageremovalbrooklyn.com/gallery.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Water Damage Repair Company of Tempe","hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"Google Guaranteed","description":"Google Guaranteed Business"},{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"Licensed & Insured","description":"Licensed and Insured"},{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"IICRC Certified","description":"IICRC Certified Firm - Water Damage Restoration"}]}</script>
+<!-- rlvc0 -->
+
+<style>
+/* Trust Signal Styles */
+.ts-rlv-reviews,.ts-rlv-badges,.ts-rlv-counter{transition:max-height .4s ease,opacity .3s ease,padding .3s ease}
+.ts-rlv-reviews{max-height:600px;opacity:1;overflow:hidden;padding:24px 0}
+.ts-rlv-review-card{background:#f8f9fa;border-radius:8px;padding:16px;margin:0 0 12px;border-left:3px solid #f4b400}
+.ts-rlv-review-card .ts-rlv-stars{color:#f4b400;font-size:16px;letter-spacing:1px}
+.ts-rlv-review-card .ts-rlv-author{font-weight:600;margin:6px 0 2px;font-size:14px;color:#333}
+.ts-rlv-review-card .ts-rlv-date{font-size:12px;color:#888;margin-bottom:6px}
+.ts-rlv-review-card .ts-rlv-text{font-size:14px;line-height:1.5;color:#444}
+.ts-rlv-compact{display:none;padding:8px 16px;font-size:14px;color:#555;text-align:center}
+.ts-rlv-compact .ts-rlv-stars-sm{color:#f4b400;font-size:14px}
+.ts-rlv-badges{max-height:120px;opacity:1;overflow:hidden;padding:16px 0;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:center}
+.ts-rlv-badges img,.ts-rlv-badges svg{height:48px;width:auto;opacity:.85;transition:opacity .2s}
+.ts-rlv-badge-strip{display:none;padding:4px 0;gap:8px;align-items:center;justify-content:center}
+.ts-rlv-badge-strip img,.ts-rlv-badge-strip svg{height:24px;width:auto;opacity:.6}
+.ts-rlv-counter{max-height:60px;opacity:1;padding:12px 0;font-size:15px;font-weight:600;color:#333;text-align:center}
+.ts-rlv-counter-inline{display:none;font-size:13px;color:#666;font-weight:normal}
+body.ua-rlv .ts-rlv-reviews{max-height:0;opacity:0;padding:0;pointer-events:none}
+body.ua-rlv .ts-rlv-compact{display:block}
+body.ua-rlv .ts-rlv-badges{max-height:0;opacity:0;padding:0;pointer-events:none}
+body.ua-rlv .ts-rlv-badge-strip{display:flex}
+body.ua-rlv .ts-rlv-counter{max-height:0;opacity:0;padding:0;pointer-events:none}
+body.ua-rlv .ts-rlv-counter-inline{display:inline}
+</style>
+<!-- rlvc1 -->
+<link rel="canonical" href="https://tempe-az.waterdamageremovalbrooklyn.com/gallery.html">
 <meta property="og:title" content="tempe az | Water Damage Repair Company of Tempe">
 <meta property="og:description" content="tempe az — Water Damage Repair Company of Tempe water damage services in Tempe, AZ.">
 <meta property="og:type" content="website">
@@ -65,136 +154,159 @@
 <meta name="twitter:title" content="tempe az | Water Damage Repair Company of Tempe">
 <meta name="twitter:description" content="tempe az — Water Damage Repair Company of Tempe water damage services in Tempe, AZ.">
 <!-- sd-graph-s -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ImageGallery","@id":"https://tempe-az.waterdamageremovalbrooklyn.com/gallery/#webpage","url":"https://tempe-az.waterdamageremovalbrooklyn.com/gallery/","name":"Project Gallery","isPartOf":{"@id":"https://tempe-az.waterdamageremovalbrooklyn.com/#website"}},{"@type":"BreadcrumbList","@id":"https://tempe-az.waterdamageremovalbrooklyn.com/gallery/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tempe-az.waterdamageremovalbrooklyn.com"},{"@type":"ListItem","position":2,"name":"Gallery","item":"https://tempe-az.waterdamageremovalbrooklyn.com/gallery/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ImageGallery","@id":"https://tempe-az.waterdamageremovalbrooklyn.com/gallery/#webpage","url":"https://tempe-az.waterdamageremovalbrooklyn.com/gallery/","name":"Our Work in Tempe","isPartOf":{"@id":"https://tempe-az.waterdamageremovalbrooklyn.com/#website"}},{"@type":"BreadcrumbList","@id":"https://tempe-az.waterdamageremovalbrooklyn.com/gallery/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tempe-az.waterdamageremovalbrooklyn.com"},{"@type":"ListItem","position":2,"name":"Gallery","item":"https://tempe-az.waterdamageremovalbrooklyn.com/gallery/"}]}]}</script>
 <!-- sd-graph-e -->
-<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/favicon.svg"><!-- jgvc0 -->
-
-<style>
-/* Trust Signal Styles */
-.ts-jgv-reviews,.ts-jgv-badges,.ts-jgv-counter{transition:max-height .4s ease,opacity .3s ease,padding .3s ease}
-.ts-jgv-reviews{max-height:600px;opacity:1;overflow:hidden;padding:24px 0}
-.ts-jgv-review-card{background:#f8f9fa;border-radius:8px;padding:16px;margin:0 0 12px;border-left:3px solid #f4b400}
-.ts-jgv-review-card .ts-jgv-stars{color:#f4b400;font-size:16px;letter-spacing:1px}
-.ts-jgv-review-card .ts-jgv-author{font-weight:600;margin:6px 0 2px;font-size:14px;color:#333}
-.ts-jgv-review-card .ts-jgv-date{font-size:12px;color:#888;margin-bottom:6px}
-.ts-jgv-review-card .ts-jgv-text{font-size:14px;line-height:1.5;color:#444}
-.ts-jgv-compact{display:none;padding:8px 16px;font-size:14px;color:#555;text-align:center}
-.ts-jgv-compact .ts-jgv-stars-sm{color:#f4b400;font-size:14px}
-.ts-jgv-badges{max-height:120px;opacity:1;overflow:hidden;padding:16px 0;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:center}
-.ts-jgv-badges img,.ts-jgv-badges svg{height:48px;width:auto;opacity:.85;transition:opacity .2s}
-.ts-jgv-badge-strip{display:none;padding:4px 0;gap:8px;align-items:center;justify-content:center}
-.ts-jgv-badge-strip img,.ts-jgv-badge-strip svg{height:24px;width:auto;opacity:.6}
-.ts-jgv-counter{max-height:60px;opacity:1;padding:12px 0;font-size:15px;font-weight:600;color:#333;text-align:center}
-.ts-jgv-counter-inline{display:none;font-size:13px;color:#666;font-weight:normal}
-body.ua-jgv .ts-jgv-reviews{max-height:0;opacity:0;padding:0;pointer-events:none}
-body.ua-jgv .ts-jgv-compact{display:block}
-body.ua-jgv .ts-jgv-badges{max-height:0;opacity:0;padding:0;pointer-events:none}
-body.ua-jgv .ts-jgv-badge-strip{display:flex}
-body.ua-jgv .ts-jgv-counter{max-height:0;opacity:0;padding:0;pointer-events:none}
-body.ua-jgv .ts-jgv-counter-inline{display:inline}
-</style>
-<!-- jgvc1 -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/favicon.svg">
 </head>
 <body>
   
-  <!-- Emergency Bar -->
-  <div style="background:#0F2E52;color:#fff;padding:8px 0;text-align:center;font-size:14px;font-weight:600;letter-spacing:0.5px;">
-    <div style="max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;">
-      <span style="display:inline-flex;align-items:center;gap:6px;">
-        <svg width="16" height="16" fill="none" stroke="#E8751A" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        24/7 EMERGENCY RESPONSE
-      </span>
-      <a href="tel:8008196517" style="color:#E8751A;text-decoration:none;font-weight:700;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
+  <!-- Top Bar: Announcement -->
+  <div style="background:#F2C94C;color:#0F1B33;padding:10px 0;text-align:center;font-size:14px;font-weight:700;">
+    <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
+      24/7 EMERGENCY RESPONSE — Call <a href="tel:8008196517" style="color:#0F1B33;text-decoration:underline;font-weight:800;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
     </div>
   </div>
   
-  <!-- Header -->
-  <header style="background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000;" role="banner">
+  <!-- Header: navy-solid -->
+  <style>.nav-dropdown:hover .nav-dropdown-menu{display:block!important;}</style>
+  <header style="background:#1B2A4A;box-shadow:0 2px 10px rgba(0,0,0,0.2);position:sticky;top:0;z-index:1000;" role="banner">
     <div style="max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:72px;">
-      <a href="./" style="font-family:var(--font-heading);font-size:22px;font-weight:800;color:#1B4E8A;text-decoration:none;">Water Damage Repair Company of Tempe</a>
+      <a href="./" style="font-family:var(--font-heading);font-size:22px;font-weight:800;color:#fff;text-decoration:none;">Water Damage Repair Company of Tempe</a>
       <nav class="desktop-nav" style="display:flex;align-items:center;gap:24px;" role="navigation" aria-label="Main navigation">
-        <a href="./" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Home</a>
-        <a href="./services.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Services</a>
-        <a href="./about.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">About</a>
-        <a href="./locations.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Service Areas</a>
-        <a href="./reviews.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Reviews</a>
-        <a href="./contact.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Contact</a>
-        <a href="tel:8008196517" style="background:#E8751A;color:#fff;padding:10px 20px;border-radius:var(--btn-radius);text-decoration:none;font-weight:700;font-size:15px;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
+        <a href="./" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;">Home</a>
+        <div class="nav-dropdown" style="position:relative;">
+          <a href="./services" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;display:inline-flex;align-items:center;gap:4px;">Services <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="nav-dropdown-menu" style="display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#0F1B33;box-shadow:0 8px 24px rgba(0,0,0,0.12);border-radius:8px;padding:8px 0;min-width:220px;z-index:1001;">
+            <a href="./services" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">All Services</a>
+            <a href="./water-damage-restoration" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Water Damage Restoration</a>
+            <a href="./flood-cleanup" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Flood Cleanup</a>
+            <a href="./mold-remediation" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Mold Remediation</a>
+            <a href="./fire-damage-restoration" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Fire Damage Restoration</a>
+            <a href="./storm-damage-repair" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Storm Damage Repair</a>
+            <a href="./sewage-cleanup" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Sewage Cleanup</a>
+            <a href="./structural-drying" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Structural Drying</a>
+            <a href="./content-restoration" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Content Restoration</a>
+          </div>
+        </div>
+        <a href="./about" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;">About</a>
+        <div class="nav-dropdown" style="position:relative;">
+          <a href="./locations" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;display:inline-flex;align-items:center;gap:4px;">Locations <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="nav-dropdown-menu" style="display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#0F1B33;box-shadow:0 8px 24px rgba(0,0,0,0.12);border-radius:8px;padding:8px 0;min-width:220px;z-index:1001;">
+            <a href="./locations" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">All Locations</a>
+            <a href="./phoenix-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Phoenix, AZ</a>
+            <a href="./san-tan-valley-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">San Tan Valley, AZ</a>
+            <a href="./queen-creek-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Queen Creek, AZ</a>
+            <a href="./mesa-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Mesa, AZ</a>
+            <a href="./chandler-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Chandler, AZ</a>
+            <a href="./gilbert-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Gilbert, AZ</a>
+            <a href="./higley-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Higley, AZ</a>
+            <a href="./scottsdale-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Scottsdale, AZ</a>
+            <a href="./rio-verde-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Rio Verde, AZ</a>
+            <a href="./fort-mcdowell-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Fort Mcdowell, AZ</a>
+          </div>
+        </div>
+        <a href="./reviews" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;">Reviews</a>
+        <a href="./contact" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;">Contact</a>
+        
+        <a href="tel:8008196517" style="background:#F2C94C;color:#fff;padding:10px 20px;border-radius:var(--btn-radius);text-decoration:none;font-weight:700;font-size:15px;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
       </nav>
-      <button class="hamburger-btn" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="display:none;background:none;border:none;cursor:pointer;padding:8px;" aria-label="Menu">
-        <svg width="28" height="28" fill="none" stroke="#1B4E8A" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <button class="hamburger-btn" aria-label="Menu" aria-expanded="false" style="display:none;background:none;border:none;cursor:pointer;padding:8px;">
+        <span style="display:block;width:26px;height:3px;margin:5px 0;background:#fff;border-radius:2px;"></span>
+        <span style="display:block;width:26px;height:3px;margin:5px 0;background:#fff;border-radius:2px;"></span>
+        <span style="display:block;width:26px;height:3px;margin:5px 0;background:#fff;border-radius:2px;"></span>
       </button>
     </div>
-    <div id="mobile-menu" class="mobile-menu" style="display:none;background:#fff;padding:16px 20px;border-top:1px solid #eee;">
-      <a href="./" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Home</a>
-      <a href="./services.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Services</a>
-      <a href="./about.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">About</a>
-      <a href="./locations.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Service Areas</a>
-      <a href="./reviews.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Reviews</a>
-      <a href="./contact.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Contact</a>
-      <a href="tel:8008196517" style="display:block;text-align:center;background:#E8751A;color:#fff;padding:14px;border-radius:var(--btn-radius);margin-top:12px;text-decoration:none;font-weight:700;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="./" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Home</a>
+      <a href="./services" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;font-weight:600;border-bottom:1px solid #f0f0f0;">Services</a>
+      <a href="./services" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">All Services</a>
+      <a href="./water-damage-restoration" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Water Damage Restoration</a>
+      <a href="./flood-cleanup" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Flood Cleanup</a>
+      <a href="./mold-remediation" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Mold Remediation</a>
+      <a href="./fire-damage-restoration" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Fire Damage Restoration</a>
+      <a href="./storm-damage-repair" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Storm Damage Repair</a>
+      <a href="./sewage-cleanup" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Sewage Cleanup</a>
+      <a href="./structural-drying" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Structural Drying</a>
+      <a href="./content-restoration" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Content Restoration</a>
+      <a href="./about" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">About</a>
+      <a href="./locations" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;font-weight:600;border-bottom:1px solid #f0f0f0;">Locations</a>
+      <a href="./locations" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">All Locations</a>
+      <a href="./phoenix-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Phoenix, AZ</a>
+      <a href="./san-tan-valley-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">San Tan Valley, AZ</a>
+      <a href="./queen-creek-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Queen Creek, AZ</a>
+      <a href="./mesa-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Mesa, AZ</a>
+      <a href="./chandler-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Chandler, AZ</a>
+      <a href="./gilbert-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Gilbert, AZ</a>
+      <a href="./higley-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Higley, AZ</a>
+      <a href="./scottsdale-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Scottsdale, AZ</a>
+      <a href="./rio-verde-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Rio Verde, AZ</a>
+      <a href="./fort-mcdowell-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Fort Mcdowell, AZ</a>
+      <a href="./reviews" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Reviews</a>
+      <a href="./contact" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Contact</a>
+      <a href="tel:8008196517" class="mobile-phone-cta" aria-label="Call (800) 819-6517">(800) 819-6517</a>
     </div>
   </header>
   <!-- Page Banner -->
-  <section style="background:linear-gradient(135deg, #1B4E8A, #0F2E52);padding:60px 0;text-align:center;">
-    <h1 style="font-family:var(--font-heading);font-size:clamp(1.8rem, 4vw, 2.5rem);font-weight:800;color:#fff;">Project Gallery</h1>
+  <section style="background:linear-gradient(135deg, #1B2A4A, #0F1B33);padding:60px 0;text-align:center;">
+    <h1 style="font-family:var(--font-heading);font-size:clamp(1.8rem, 4vw, 2.5rem);font-weight:800;color:#fff;">Our Work in Tempe</h1>
     <p style="color:rgba(255,255,255,0.8);margin-top:12px;font-size:16px;">Water Damage Repair Company of Tempe | Tempe, AZ</p>
   </section>
-<!-- jgvh0 -->
+<!-- rlvh0 -->
 
-  <div class="ts-jgv-compact" aria-label="Rating Summary" style="display:block">
-    <span class="ts-jgv-stars-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 &middot; 200 reviews
+  <div class="ts-rlv-compact" aria-label="Rating Summary" style="display:block">
+    <span class="ts-rlv-stars-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 &middot; 200 reviews
   </div>
-  <div class="ts-jgv-badge-strip" aria-label="Certifications" style="display:flex">
+  <div class="ts-rlv-badge-strip" aria-label="Certifications" style="display:flex">
     <span style="font-size:11px;color:#666">&#10003; IICRC Certified</span> <span style="font-size:11px;color:#666">&#10003; BBB A+</span> <span style="font-size:11px;color:#666">&#10003; 24/7 Emergency</span>
   </div>
-<!-- jgvh1 -->  <main role="main">
+<!-- rlvh1 -->
+  <main role="main">
     
     <section style="padding:var(--section-padding) 0;background:#fff;">
       <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
-        <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1F2937;text-align:center;margin-bottom:40px;">Our Recent Projects</h2>
-        <p style="color:#374151;font-size:16px;text-align:center;max-width:700px;margin:0 auto 40px;">Browse our portfolio of completed water damage projects in Tempe and surrounding areas.</p>
+        <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1B2A4A;text-align:center;margin-bottom:40px;">Our Work in Tempe</h2>
+        <p style="color:#333333;font-size:16px;text-align:center;max-width:700px;margin:0 auto 40px;">Here are some of the water damage restoration projects we've completed in Tempe, AZ.</p>
         <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px;">
           <div style="border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--shadow-card);">
-            <img src="images/gallery-1.jpeg" alt="completed restoration project 1" style="width:100%;height:280px;object-fit:cover;" loading="lazy">
+            <img fetchpriority="high" src="images/service-restoration-service-restoration-waterdamagerestorati.webp" style="width:100%;height:280px;object-fit:cover;" loading="lazy" alt="ffffff?text=Water+Damage+Restoration+gallery0">
             <div style="padding:16px;">
-              <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1F2937;margin-bottom:4px;">Water Damage Restoration</h3>
-              <p style="color:#374151;font-size:13px;">Tempe, AZ</p>
+              <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1B2A4A;margin-bottom:4px;">Water Damage Restoration</h3>
+              <p style="color:#333333;font-size:13px;">Full home restoration after pipe burst — Tempe</p>
             </div>
           </div>
           <div style="border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--shadow-card);">
-            <img src="images/gallery-2.jpeg" alt="completed restoration project 2" style="width:100%;height:280px;object-fit:cover;" loading="lazy">
+            <img fetchpriority="high" src="images/service-extraction-service-extraction-waterdamageextraction.webp" style="width:100%;height:280px;object-fit:cover;" loading="lazy" alt="ffffff?text=Flood+Cleanup+gallery1">
             <div style="padding:16px;">
-              <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1F2937;margin-bottom:4px;">Flood Cleanup</h3>
-              <p style="color:#374151;font-size:13px;">Tempe, AZ</p>
+              <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1B2A4A;margin-bottom:4px;">Flood Cleanup</h3>
+              <p style="color:#333333;font-size:13px;">Basement flood response — Tempe</p>
             </div>
           </div>
           <div style="border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--shadow-card);">
-            <img src="images/gallery-3.jpeg" alt="completed restoration project 3" style="width:100%;height:280px;object-fit:cover;" loading="lazy">
+            <img decoding="async" src="images/service-mold-service-mold-moldremediationremovalprote.webp" style="width:100%;height:280px;object-fit:cover;" loading="lazy" alt="ffffff?text=Mold+Remediation+gallery2">
             <div style="padding:16px;">
-              <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1F2937;margin-bottom:4px;">Mold Remediation</h3>
-              <p style="color:#374151;font-size:13px;">Tempe, AZ</p>
+              <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1B2A4A;margin-bottom:4px;">Mold Remediation</h3>
+              <p style="color:#333333;font-size:13px;">Bathroom mold removal — Tempe home</p>
             </div>
           </div>
           <div style="border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--shadow-card);">
-            <img src="images/gallery-4.jpeg" alt="completed restoration project 4" style="width:100%;height:280px;object-fit:cover;" loading="lazy">
+            <img decoding="async" src="images/service-restoration-service-restoration-waterdamagerestorati.webp" style="width:100%;height:280px;object-fit:cover;" loading="lazy" alt="ffffff?text=Fire+Damage+Restoration+gallery3">
             <div style="padding:16px;">
-              <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1F2937;margin-bottom:4px;">Fire Damage Restoration</h3>
-              <p style="color:#374151;font-size:13px;">Tempe, AZ</p>
+              <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1B2A4A;margin-bottom:4px;">Fire Damage Restoration</h3>
+              <p style="color:#333333;font-size:13px;">Full fire restoration — Tempe area home</p>
             </div>
           </div>
           <div style="border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--shadow-card);">
-            <img src="images/gallery-5.jpeg" alt="completed restoration project 5" style="width:100%;height:280px;object-fit:cover;" loading="lazy">
+            <img decoding="async" src="images/service-repair-gallery4-service-repair-gallery4-waterdamagedamag.webp" style="width:100%;height:280px;object-fit:cover;" loading="lazy" alt="ffffff?text=Storm+Damage+Repair+gallery4">
             <div style="padding:16px;">
-              <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1F2937;margin-bottom:4px;">Storm Damage Repair</h3>
-              <p style="color:#374151;font-size:13px;">Tempe, AZ</p>
+              <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1B2A4A;margin-bottom:4px;">Storm Damage Repair</h3>
+              <p style="color:#333333;font-size:13px;">Emergency storm board-up and repair — Tempe</p>
             </div>
           </div>
           <div style="border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--shadow-card);">
-            <img src="images/gallery-6.jpeg" alt="completed restoration project 6" style="width:100%;height:280px;object-fit:cover;" loading="lazy">
+            <img decoding="async" src="images/gallery-gallery5-gallery-gallery5-residentialroofingcompl.webp" style="width:100%;height:280px;object-fit:cover;" loading="lazy" alt="ffffff?text=Sewage+Cleanup+gallery5">
             <div style="padding:16px;">
-              <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1F2937;margin-bottom:4px;">Sewage Cleanup</h3>
-              <p style="color:#374151;font-size:13px;">Tempe, AZ</p>
+              <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1B2A4A;margin-bottom:4px;">Sewage Cleanup</h3>
+              <p style="color:#333333;font-size:13px;">Sewage remediation and rebuild — Tempe</p>
             </div>
           </div>
         </div>
@@ -203,22 +315,22 @@ body.ua-jgv .ts-jgv-counter-inline{display:inline}
   </main>
   
   <!-- Final CTA -->
-  <section id="contact" style="background:linear-gradient(135deg, #1B4E8A 0%, #0F2E52 100%);padding:var(--section-padding) 0;text-align:center;">
+  <section id="contact" style="background:linear-gradient(135deg, #1B2A4A 0%, #0F1B33 100%);padding:var(--section-padding) 0;text-align:center;">
     <div style="max-width:700px;margin:0 auto;padding:0 20px;">
-      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#fff;margin-bottom:16px;">Ready to Get Started?</h2>
-      <p style="color:rgba(255,255,255,0.85);font-size:18px;line-height:1.6;margin-bottom:32px;">Contact Water Damage Repair Company of Tempe today for a free consultation. 15+ years of trusted water damage service in Tempe.</p>
+      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#fff;margin-bottom:16px;">Dealing with Water Damage? We're Ready.</h2>
+      <p style="color:rgba(255,255,255,0.85);font-size:18px;line-height:1.6;margin-bottom:32px;">(800) 819-6517 — that's the only number you need. Free estimates, direct insurance billing, 15 years in Tempe.</p>
       <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
-        <a href="tel:8008196517" style="background:#E8751A;color:#fff;padding:16px 36px;border-radius:var(--btn-radius);font-size:18px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;" aria-label="Call (800) 819-6517">
+        <a href="tel:8008196517" style="background:#F2C94C;color:#fff;padding:16px 36px;border-radius:var(--btn-radius);font-size:18px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;" aria-label="Call (800) 819-6517">
           <svg width="20" height="20" fill="#fff" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.01l-2.2 2.21z"/></svg>
           Call (800) 819-6517
         </a>
-        <a href="mailto:info@tempe-az.waterdamageremovalbrooklyn.com" style="color:#fff;padding:16px 36px;border-radius:var(--btn-radius);font-size:16px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5);">Get Free Estimate</a>
+        <a href="#contact" style="color:#fff;padding:16px 36px;border-radius:var(--btn-radius);font-size:16px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5);">Get Free Estimate</a>
       </div>
     </div>
   </section>
   
   <!-- Footer -->
-  <footer style="background:#0F2E52;color:rgba(255,255,255,0.8);padding:48px 0 0;" role="contentinfo">
+  <footer style="background:#0F1B33;color:rgba(255,255,255,0.8);padding:48px 0 0;" role="contentinfo">
     <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:40px;margin-bottom:40px;">
         <!-- Company -->
@@ -230,26 +342,25 @@ body.ua-jgv .ts-jgv-counter-inline{display:inline}
         <div>
           <div style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#fff;margin-bottom:16px;">Quick Links</div>
           <a href="./" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Home</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Services</a>
-          <a href="./about.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">About</a>
-          <a href="./locations.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Service Areas</a>
-          <a href="./reviews.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Reviews</a>
-          <a href="./contact.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Contact</a>
+          <a href="./about" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">About</a>
+          <a href="./locations" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Locations</a>
+          <a href="./reviews" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Reviews</a>
+          <a href="./contact" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Contact</a>
         </div>
         <!-- Services -->
         <div>
           <div style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#fff;margin-bottom:16px;">Services</div>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Water Damage Restoration</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Flood Cleanup</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Mold Remediation</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Fire Damage Restoration</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Storm Damage Repair</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Sewage Cleanup</a>
+          <a href="./water-damage-restoration" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Water Damage Restoration</a>
+          <a href="./flood-cleanup" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Flood Cleanup</a>
+          <a href="./mold-remediation" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Mold Remediation</a>
+          <a href="./fire-damage-restoration" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Fire Damage Restoration</a>
+          <a href="./storm-damage-repair" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Storm Damage Repair</a>
+          <a href="./sewage-cleanup" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Sewage Cleanup</a>
         </div>
         <!-- Contact -->
         <div>
           <div style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#fff;margin-bottom:16px;">Contact Us</div>
-          <a href="tel:8008196517" style="display:block;color:#E8751A;text-decoration:none;font-size:16px;font-weight:700;padding:4px 0;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
+          <a href="tel:8008196517" style="display:block;color:#F2C94C;text-decoration:none;font-size:16px;font-weight:700;padding:4px 0;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
           <a href="mailto:info@tempe-az.waterdamageremovalbrooklyn.com" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">info@tempe-az.waterdamageremovalbrooklyn.com</a>
           
           <p style="font-size:14px;padding:4px 0;">Hours: 24/7 Emergency Service</p>
@@ -267,23 +378,104 @@ body.ua-jgv .ts-jgv-counter-inline{display:inline}
       <div style="border-top:1px solid rgba(255,255,255,0.1);padding:20px 0;text-align:center;font-size:13px;color:rgba(255,255,255,0.5);">
         © 2026 Water Damage Repair Company of Tempe. All rights reserved.
         <span style="margin:0 8px;">|</span>
-        <a href="./privacy.html" style="color:rgba(255,255,255,0.5);text-decoration:none;">Privacy Policy</a>
+        <a href="./privacy" style="color:rgba(255,255,255,0.5);text-decoration:none;">Privacy Policy</a>
         <span style="margin:0 8px;">|</span>
-        <a href="./terms.html" style="color:rgba(255,255,255,0.5);text-decoration:none;">Terms of Service</a>
+        <a href="./terms" style="color:rgba(255,255,255,0.5);text-decoration:none;">Terms of Service</a>
       </div>
     </div>
   </footer>
   <script>
-  document.querySelectorAll('#mobile-menu a').forEach(function(a){
-    a.addEventListener('click',function(){document.getElementById('mobile-menu').classList.remove('open');});
-  });
+  (function(){
+    var btn=document.querySelector('.hamburger-btn');
+    var menu=document.getElementById('mobile-menu');
+    if(!btn||!menu)return;
+    btn.addEventListener('click',function(){
+      var open=menu.classList.toggle('open');
+      btn.classList.toggle('open',open);
+      btn.setAttribute('aria-expanded',open?'true':'false');
+      document.body.style.overflow=open?'hidden':'';
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        menu.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+        document.body.style.overflow='';
+      });
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'&&menu.classList.contains('open')){
+        menu.classList.remove('open');btn.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');document.body.style.overflow='';
+      }
+    });
+  })();
   </script>
   <script>
   document.querySelectorAll('.faq-item').forEach(function(item){
     item.querySelector('button').addEventListener('click',function(){});
   });
-  </script><!-- jgvj0 -->
-<script>(function(){var c='ua-jgv',e=['mousemove','scroll','touchstart','click','keydown'],b=document.body;function h(){b.classList.add(c);e.forEach(function(v){window.removeEventListener(v,h,{passive:true})});}e.forEach(function(v){window.addEventListener(v,h,{passive:true});});})();</script>
-<!-- jgvj1 -->
+  </script>
+<!-- rlvj0 -->
+<script>(function(){var c='ua-rlv',e=['mousemove','scroll','touchstart','click','keydown'],b=document.body;function h(){b.classList.add(c);e.forEach(function(v){window.removeEventListener(v,h,{passive:true})});}e.forEach(function(v){window.addEventListener(v,h,{passive:true});});})();</script>
+<!-- rlvj1 -->
+<script>
+(function() {
+  var trackingNumber = '(800) 819-6517';
+  var websiteId = 'fran-1771836863034-ui3lq2';
+  
+  function replacePhoneNumbers() {
+    var phoneRegex = /[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}/g;
+    var elements = document.querySelectorAll('a[href^="tel:"], span, p, div, h1, h2, h3, h4, h5, h6, li, td, button');
+    elements.forEach(function(element) {
+      if (element.tagName === "A" && element.href && element.href.startsWith("tel:")) {
+        element.href = "tel:" + trackingNumber;
+        element.textContent = formatPhoneNumber(trackingNumber);
+      } else if (element.children.length === 0 && element.textContent.match(phoneRegex)) {
+        element.textContent = element.textContent.replace(phoneRegex, formatPhoneNumber(trackingNumber));
+      }
+    });
+  }
+  
+  function formatPhoneNumber(number) {
+    var cleaned = number.replace(/\D/g, "");
+    if (cleaned.length === 11 && cleaned.charAt(0) === "1") {
+      cleaned = cleaned.substr(1);
+    }
+    return "(" + cleaned.substr(0,3) + ") " + cleaned.substr(3,3) + "-" + cleaned.substr(6);
+  }
+  
+  function trackCallClick() {
+    if (typeof gtag !== "undefined") {
+      gtag("event", "click_to_call", {
+        "event_category": "engagement",
+        "event_label": trackingNumber,
+        "value": websiteId
+      });
+    }
+    fetch("/track/call-click", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        websiteId: websiteId,
+        trackingNumber: trackingNumber,
+        timestamp: new Date().toISOString()
+      })
+    }).catch(function(){});
+  }
+  
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", replacePhoneNumbers);
+  } else {
+    replacePhoneNumbers();
+  }
+  
+  document.addEventListener("click", function(e) {
+    var el = e.target;
+    while (el && el.tagName !== "A") el = el.parentElement;
+    if (el && el.href && el.href.startsWith("tel:")) trackCallClick();
+  });
+})();
+</script>
 </body>
 </html>

@@ -3,38 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Water Damage Repair Company of Lukeville | Lukeville Water Damage Contractor</title>
-  <meta name="description" content="Water Damage Repair Company of Lukeville - Lukeville's trusted water damage contractor. Free estimates, 15+ years experience. Call (800) 819-6517.">
+  <title>Water Damage Repair Company of Lukeville | Water Damage Repair Lukeville AZ</title>
+  <meta name="description" content="Lukeville water damage restoration by Water Damage Repair Company of Lukeville. 15+ years, 4.9 stars, 200+ reviews. Emergency service 24/7. (800) 819-6517.">
   <meta name="robots" content="index, follow">
   <meta name="generator" content="custom">
   <!-- ASSEMBLED-PAGE v1 -->
   <link rel="canonical" href="https://lukeville-az.waterdamageremovalbrooklyn.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@600;700;800&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
   <style>
   :root {
-    --color-primary: #1B4E8A;
-    --color-primary-dark: #0F2E52;
-    --color-secondary: #3A7BD5;
-    --color-accent: #E8751A;
+    --color-primary: #1B2A4A;
+    --color-primary-dark: #0F1B33;
+    --color-secondary: #263B63;
+    --color-accent: #F2C94C;
     --color-bg-light: #ffffff;
-    --color-bg-alt: #F5F7FA;
-    --color-bg-dark: #0F2E52;
-    --color-text: #374151;
+    --color-bg-alt: #F9F6ED;
+    --color-bg-dark: #0F1B33;
+    --color-text: #333333;
     --color-text-light: #666666;
     --color-text-on-dark: #ffffff;
     --color-border: #e0e0e0;
-    --font-heading: 'Inter', 'Segoe UI', sans-serif;
-    --font-body: 'Inter', 'Segoe UI', sans-serif;
+    --font-heading: 'Geologica', 'Segoe UI', sans-serif;
+    --font-body: 'Montserrat', 'Segoe UI', sans-serif;
     --font-size-h1: clamp(2rem, 4vw, 3rem);
     --font-size-h2: clamp(1.5rem, 3vw, 2.25rem);
     --font-size-h3: clamp(1.25rem, 2.5vw, 1.75rem);
     --font-size-body: 1rem;
     --section-padding: clamp(3rem, 6vw, 5rem);
     --container-max: 1200px;
-    --card-radius: 8px;
-    --btn-radius: 6px;
+    --card-radius: 20px;
+    --btn-radius: 8px;
     --shadow-card: 0 4px 6px rgba(0,0,0,0.07);
     --shadow-hover: 0 8px 25px rgba(0,0,0,0.12);
   }
@@ -44,218 +44,318 @@
   img { max-width:100%; height:auto; }
   a { transition:color 0.2s; }
 
-  /* Responsive */
+  /* Responsive: Tablet */
+  @media (max-width: 1024px) {
+    :root { --section-padding: clamp(2.5rem, 5vw, 4rem); }
+  }
+
+  /* Hamburger button (hidden on desktop) */
+  .hamburger-btn{display:none;background:none;border:none;cursor:pointer;padding:8px;z-index:1002;}
+  .hamburger-btn span{display:block;width:26px;height:3px;margin:5px 0;background:#1B2A4A;border-radius:2px;transition:all .3s ease;}
+  .hamburger-btn.open span:nth-child(1){transform:rotate(45deg) translate(6px,6px);}
+  .hamburger-btn.open span:nth-child(2){opacity:0;}
+  .hamburger-btn.open span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px);}
+
+  /* Mobile menu (hidden on desktop) */
+  .mobile-menu{display:none;background:#fff;padding:20px;border-top:1px solid #eee;}
+  .mobile-menu a{display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;}
+  .mobile-phone-cta{display:block;text-align:center;background:#F2C94C;color:#fff!important;padding:14px;border-radius:var(--btn-radius);margin-top:12px;text-decoration:none;font-weight:700;border-bottom:none!important;}
+
+  /* Responsive: Mobile */
   @media (max-width: 768px) {
+    :root {
+      --font-size-h1: clamp(1.75rem, 5vw, 2.5rem);
+      --font-size-h2: clamp(1.35rem, 4vw, 1.75rem);
+      --font-size-h3: clamp(1.1rem, 3vw, 1.35rem);
+      --section-padding: clamp(2rem, 5vw, 3rem);
+    }
     .desktop-nav { display:none !important; }
     .hamburger-btn { display:block !important; }
     .mobile-menu.open { display:block !important; }
+    .trust-metrics-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
+    .hero-section { min-height: auto !important; }
+    .hero-inner { padding: 40px 16px !important; }
+    .hero-stats-card { display: none !important; }
+    .hero-buttons a { padding: 14px 24px !important; font-size: 16px !important; }
+    .services-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
+    .content-grid { grid-template-columns: 1fr !important; }
     section [style*="grid-template-columns: repeat(4"] { grid-template-columns: repeat(2, 1fr) !important; }
     section [style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
     section [style*="display:flex;gap:32px"] { flex-direction: column !important; }
     section [style*="flex:0 0 300px"] { flex: 1 1 100% !important; }
+    section [style*="grid-template-columns:repeat(auto-fit, minmax(2"] { grid-template-columns: 1fr !important; }
+    section [style*="grid-template-columns:repeat(auto-fit, minmax(3"] { grid-template-columns: 1fr !important; }
+    img[style*="height:300px"] { height: 200px !important; }
+    img[style*="height:400px"] { height: 250px !important; }
+    img[style*="height:280px"] { height: 200px !important; }
+    iframe[style*="height:400"] { height: 250px !important; }
+    a[style*="padding:16px 36px"] { padding: 14px 24px !important; font-size: 16px !important; }
+    a[style*="padding:16px 32px"] { padding: 14px 24px !important; font-size: 16px !important; }
+    section[style*="padding:60px"] { padding: 40px 0 !important; }
+  }
+
+  /* Responsive: Small Phone */
+  @media (max-width: 480px) {
+    :root {
+      --font-size-h1: clamp(1.5rem, 6vw, 2rem);
+      --font-size-h2: clamp(1.2rem, 5vw, 1.5rem);
+      --font-size-h3: clamp(1rem, 4vw, 1.25rem);
+    }
+    .trust-metrics-grid { grid-template-columns: 1fr 1fr !important; gap: 8px !important; padding: 16px !important; }
+    .trust-metrics-grid > div { font-size: 12px !important; }
+    .trust-metrics-grid > div > div:first-child { font-size: 22px !important; }
+    .hero-buttons { flex-direction: column !important; }
+    .hero-buttons a { width: 100% !important; text-align: center !important; justify-content: center !important; }
+    header > div { height: 56px !important; }
+    header a[style*="font-size:22px"] { font-size: 18px !important; }
   }
 
   /* FAQ */
   .faq-item.open .faq-answer { max-height: 500px !important; }
+
+  
+
+  
+
+  
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Water Damage Repair Company of Lukeville","telephone":"(800) 819-6517","email":"info@lukeville-az.waterdamageremovalbrooklyn.com","url":"https://lukeville-az.waterdamageremovalbrooklyn.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"200","bestRating":"5"},"areaServed":[{"@type":"City","name":"Lukeville"},{"@type":"City","name":"Ajo"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Water Damage Repair Company of Lukeville","hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"BBB Accredited Business","description":"BBB Accredited Business A+ Rating"},{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"IICRC Certified","description":"IICRC Certified Firm - Water Damage Restoration"}]}</script><meta property="og:title" content="Water Damage Repair Company of Lukeville — Lukeville, AZ">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Water Damage Repair Company of Lukeville","hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"BBB Accredited Business","description":"BBB Accredited Business A+ Rating"},{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"IICRC Certified","description":"IICRC Certified Firm - Water Damage Restoration"}]}</script>
+<meta property="og:title" content="Water Damage Repair Company of Lukeville | Lukeville, AZ">
 <meta property="og:description" content="Professional water damage services in Lukeville, AZ. Water Damage Repair Company of Lukeville — licensed, insured, and trusted. Call (800) 819-6517 for a free e">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://lukeville-az.waterdamageremovalbrooklyn.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Water Damage Repair Company of Lukeville — Lukeville, AZ">
+<meta name="twitter:title" content="Water Damage Repair Company of Lukeville | Lukeville, AZ">
 <meta name="twitter:description" content="Professional water damage services in Lukeville, AZ. Water Damage Repair Company of Lukeville — licensed, insured, and trusted. Call (800) 819-6517 for a free e">
 <!-- sd-graph-s -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/#website","url":"https://lukeville-az.waterdamageremovalbrooklyn.com","publisher":{"@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://lukeville-az.waterdamageremovalbrooklyn.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://lukeville-az.waterdamageremovalbrooklyn.com#webpage","url":"https://lukeville-az.waterdamageremovalbrooklyn.com","name":"Water Damage Repair Company of Lukeville","isPartOf":{"@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/#website"},"about":{"@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/#organization"}},{"@type":"OfferCatalog","@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/#offercatalog","name":"Water Damage Repair Company of Lukeville Services","provider":{"@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/#organization"},"itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/services/water-damage-restoration/#service","name":"Water Damage Restoration","serviceType":"water damage"}},{"@type":"Offer","itemOffered":{"@type":"Service","@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/services/flood-cleanup/#service","name":"Flood Cleanup","serviceType":"water damage"}},{"@type":"Offer","itemOffered":{"@type":"Service","@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/services/mold-remediation/#service","name":"Mold Remediation","serviceType":"water damage"}},{"@type":"Offer","itemOffered":{"@type":"Service","@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/services/fire-damage-restoration/#service","name":"Fire Damage Restoration","serviceType":"water damage"}},{"@type":"Offer","itemOffered":{"@type":"Service","@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/services/storm-damage-repair/#service","name":"Storm Damage Repair","serviceType":"water damage"}},{"@type":"Offer","itemOffered":{"@type":"Service","@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/services/sewage-cleanup/#service","name":"Sewage Cleanup","serviceType":"water damage"}},{"@type":"Offer","itemOffered":{"@type":"Service","@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/services/structural-drying/#service","name":"Structural Drying","serviceType":"water damage"}},{"@type":"Offer","itemOffered":{"@type":"Service","@id":"https://lukeville-az.waterdamageremovalbrooklyn.com/services/content-restoration/#service","name":"Content Restoration","serviceType":"water damage"}}]}]}</script>
 <!-- sd-graph-e -->
-<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/favicon.svg"><!-- f4hc0 -->
-
-<style>
-/* Trust Signal Styles */
-.ts-f4h-reviews,.ts-f4h-badges,.ts-f4h-counter{transition:max-height .4s ease,opacity .3s ease,padding .3s ease}
-.ts-f4h-reviews{max-height:600px;opacity:1;overflow:hidden;padding:24px 0}
-.ts-f4h-review-card{background:#f8f9fa;border-radius:8px;padding:16px;margin:0 0 12px;border-left:3px solid #f4b400}
-.ts-f4h-review-card .ts-f4h-stars{color:#f4b400;font-size:16px;letter-spacing:1px}
-.ts-f4h-review-card .ts-f4h-author{font-weight:600;margin:6px 0 2px;font-size:14px;color:#333}
-.ts-f4h-review-card .ts-f4h-date{font-size:12px;color:#888;margin-bottom:6px}
-.ts-f4h-review-card .ts-f4h-text{font-size:14px;line-height:1.5;color:#444}
-.ts-f4h-compact{display:none;padding:8px 16px;font-size:14px;color:#555;text-align:center}
-.ts-f4h-compact .ts-f4h-stars-sm{color:#f4b400;font-size:14px}
-.ts-f4h-badges{max-height:120px;opacity:1;overflow:hidden;padding:16px 0;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:center}
-.ts-f4h-badges img,.ts-f4h-badges svg{height:48px;width:auto;opacity:.85;transition:opacity .2s}
-.ts-f4h-badge-strip{display:none;padding:4px 0;gap:8px;align-items:center;justify-content:center}
-.ts-f4h-badge-strip img,.ts-f4h-badge-strip svg{height:24px;width:auto;opacity:.6}
-.ts-f4h-counter{max-height:60px;opacity:1;padding:12px 0;font-size:15px;font-weight:600;color:#333;text-align:center}
-.ts-f4h-counter-inline{display:none;font-size:13px;color:#666;font-weight:normal}
-body.ua-f4h .ts-f4h-reviews{max-height:0;opacity:0;padding:0;pointer-events:none}
-body.ua-f4h .ts-f4h-compact{display:block}
-body.ua-f4h .ts-f4h-badges{max-height:0;opacity:0;padding:0;pointer-events:none}
-body.ua-f4h .ts-f4h-badge-strip{display:flex}
-body.ua-f4h .ts-f4h-counter{max-height:0;opacity:0;padding:0;pointer-events:none}
-body.ua-f4h .ts-f4h-counter-inline{display:inline}
-</style>
-<!-- f4hc1 -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/favicon.svg">
 </head>
 <body>
   
-  <!-- Emergency Bar -->
-  <div style="background:#0F2E52;color:#fff;padding:8px 0;text-align:center;font-size:14px;font-weight:600;letter-spacing:0.5px;">
-    <div style="max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;">
-      <span style="display:inline-flex;align-items:center;gap:6px;">
-        <svg width="16" height="16" fill="none" stroke="#E8751A" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        24/7 EMERGENCY RESPONSE
-      </span>
-      <a href="tel:8008196517" style="color:#E8751A;text-decoration:none;font-weight:700;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
-    </div>
-  </div>
-
-  <!-- Header -->
-  <header style="background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000;" role="banner">
+  <!-- Header: navy-solid -->
+  <style>.nav-dropdown:hover .nav-dropdown-menu{display:block!important;}</style>
+  <header style="background:#1B2A4A;box-shadow:0 2px 10px rgba(0,0,0,0.2);position:sticky;top:0;z-index:1000;" role="banner">
     <div style="max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:72px;">
-      <a href="./" style="font-family:var(--font-heading);font-size:22px;font-weight:800;color:#1B4E8A;text-decoration:none;">Water Damage Repair Company of Lukeville</a>
+      <a href="./" style="font-family:var(--font-heading);font-size:22px;font-weight:800;color:#fff;text-decoration:none;">Water Damage Repair Company of Lukeville</a>
       <nav class="desktop-nav" style="display:flex;align-items:center;gap:24px;" role="navigation" aria-label="Main navigation">
-        <a href="./" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Home</a>
-        <a href="./services.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Services</a>
-        <a href="./about.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">About</a>
-        <a href="./locations.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Service Areas</a>
-        <a href="./reviews.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Reviews</a>
-        <a href="./contact.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Contact</a>
-        <a href="tel:8008196517" style="background:#E8751A;color:#fff;padding:10px 20px;border-radius:var(--btn-radius);text-decoration:none;font-weight:700;font-size:15px;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
+        <a href="./" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;">Home</a>
+        <div class="nav-dropdown" style="position:relative;">
+          <a href="./services" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;display:inline-flex;align-items:center;gap:4px;">Services <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="nav-dropdown-menu" style="display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#0F1B33;box-shadow:0 8px 24px rgba(0,0,0,0.12);border-radius:8px;padding:8px 0;min-width:220px;z-index:1001;">
+            <a href="./services" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">All Services</a>
+            <a href="./water-damage-restoration" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Water Damage Restoration</a>
+            <a href="./flood-cleanup" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Flood Cleanup</a>
+            <a href="./mold-remediation" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Mold Remediation</a>
+            <a href="./fire-damage-restoration" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Fire Damage Restoration</a>
+            <a href="./storm-damage-repair" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Storm Damage Repair</a>
+            <a href="./sewage-cleanup" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Sewage Cleanup</a>
+            <a href="./structural-drying" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Structural Drying</a>
+            <a href="./content-restoration" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Content Restoration</a>
+          </div>
+        </div>
+        <a href="./about" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;">About</a>
+        <div class="nav-dropdown" style="position:relative;">
+          <a href="./locations" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;display:inline-flex;align-items:center;gap:4px;">Locations <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="nav-dropdown-menu" style="display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#0F1B33;box-shadow:0 8px 24px rgba(0,0,0,0.12);border-radius:8px;padding:8px 0;min-width:220px;z-index:1001;">
+            <a href="./locations" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">All Locations</a>
+            <a href="./ajo-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Ajo, AZ</a>
+          </div>
+        </div>
+        <a href="./reviews" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;">Reviews</a>
+        <a href="./contact" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;">Contact</a>
+        
+        <a href="tel:8008196517" style="background:#F2C94C;color:#fff;padding:10px 20px;border-radius:var(--btn-radius);text-decoration:none;font-weight:700;font-size:15px;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
       </nav>
-      <button class="hamburger-btn" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="display:none;background:none;border:none;cursor:pointer;padding:8px;" aria-label="Menu">
-        <svg width="28" height="28" fill="none" stroke="#1B4E8A" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <button class="hamburger-btn" aria-label="Menu" aria-expanded="false" style="display:none;background:none;border:none;cursor:pointer;padding:8px;">
+        <span style="display:block;width:26px;height:3px;margin:5px 0;background:#fff;border-radius:2px;"></span>
+        <span style="display:block;width:26px;height:3px;margin:5px 0;background:#fff;border-radius:2px;"></span>
+        <span style="display:block;width:26px;height:3px;margin:5px 0;background:#fff;border-radius:2px;"></span>
       </button>
     </div>
-    <div id="mobile-menu" class="mobile-menu" style="display:none;background:#fff;padding:16px 20px;border-top:1px solid #eee;">
-      <a href="./" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Home</a>
-      <a href="./services.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Services</a>
-      <a href="./about.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">About</a>
-      <a href="./locations.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Service Areas</a>
-      <a href="./reviews.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Reviews</a>
-      <a href="./contact.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Contact</a>
-      <a href="tel:8008196517" style="display:block;text-align:center;background:#E8751A;color:#fff;padding:14px;border-radius:var(--btn-radius);margin-top:12px;text-decoration:none;font-weight:700;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="./" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Home</a>
+      <a href="./services" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;font-weight:600;border-bottom:1px solid #f0f0f0;">Services</a>
+      <a href="./services" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">All Services</a>
+      <a href="./water-damage-restoration" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Water Damage Restoration</a>
+      <a href="./flood-cleanup" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Flood Cleanup</a>
+      <a href="./mold-remediation" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Mold Remediation</a>
+      <a href="./fire-damage-restoration" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Fire Damage Restoration</a>
+      <a href="./storm-damage-repair" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Storm Damage Repair</a>
+      <a href="./sewage-cleanup" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Sewage Cleanup</a>
+      <a href="./structural-drying" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Structural Drying</a>
+      <a href="./content-restoration" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Content Restoration</a>
+      <a href="./about" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">About</a>
+      <a href="./locations" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;font-weight:600;border-bottom:1px solid #f0f0f0;">Locations</a>
+      <a href="./locations" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">All Locations</a>
+      <a href="./ajo-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Ajo, AZ</a>
+      <a href="./reviews" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Reviews</a>
+      <a href="./contact" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Contact</a>
+      <a href="tel:8008196517" class="mobile-phone-cta" aria-label="Call (800) 819-6517">(800) 819-6517</a>
     </div>
   </header>
-  <!-- Hero Section -->
-  <section style="position:relative;min-height:520px;background:url('images/hero.jpeg') center/cover no-repeat;display:flex;align-items:center;overflow:hidden;">
-    <div style="position:absolute;inset:0;background:linear-gradient(135deg, #0F2E52 0%, #1B4E8Acc 50%, #0F2E52 100%);opacity:0.7;"></div>
-    <div style="position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:60px 20px;width:100%;">
+  <!-- Hero: full-overlay -->
+  <section class="hero-section" style="position:relative;min-height:560px;background:url('images/service-restoration-service-restoration-waterdamagerestorati.webp') center/cover no-repeat;display:flex;align-items:center;overflow:hidden;">
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg, rgba(15,27,51,0.9) 0%, rgba(27,42,74,0.75) 50%, transparent 75%);"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(to top, #0F1B33cc 0%, transparent 50%);"></div>
+    <div class="hero-inner" style="position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:80px 20px 60px;width:100%;">
       <div style="max-width:640px;">
         
-        <h1 style="font-family:var(--font-heading);font-size:clamp(2rem, 5vw, 3.2rem);font-weight:800;color:#fff;line-height:1.15;margin-bottom:20px;">Lukeville's Trusted Water Damage Experts</h1>
-        <p style="font-size:18px;color:rgba(255,255,255,0.9);line-height:1.6;margin-bottom:32px;">15+ years of professional water damage service. Licensed, insured, and committed to excellence.</p>
-        <div style="display:flex;gap:16px;flex-wrap:wrap;">
-          <a href="tel:8008196517" style="display:inline-flex;align-items:center;gap:8px;background:#E8751A;color:#fff;padding:16px 32px;border-radius:var(--btn-radius);font-size:18px;font-weight:700;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='';this.style.boxShadow=''" aria-label="Call (800) 819-6517">
+        <h1 style="font-family:var(--font-heading);font-size:var(--font-size-h1);font-weight:800;color:#fff;line-height:1.1;margin-bottom:20px;text-shadow:0 2px 8px rgba(0,0,0,0.3);">Lukeville Area Water Damage Cleanup — 15+ Years</h1>
+        <p style="font-size:18px;color:rgba(255,255,255,0.92);line-height:1.6;margin-bottom:32px;">Water extraction, structural drying, mold prevention. Licensed, insured, IICRC-certified.</p>
+        <div class="hero-buttons" style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="tel:8008196517" style="display:inline-flex;align-items:center;gap:8px;background:#F2C94C;color:#fff;padding:16px 32px;border-radius:var(--btn-radius);font-size:18px;font-weight:700;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,0.3);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.4)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.3)'" aria-label="Call (800) 819-6517">
             <svg width="20" height="20" fill="#fff" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.01l-2.2 2.21z"/></svg>
             Call Now: (800) 819-6517
           </a>
-          <a href="#contact" style="display:inline-flex;align-items:center;background:transparent;color:#fff;padding:16px 32px;border-radius:var(--btn-radius);font-size:16px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5);transition:all 0.2s;" onmouseover="this.style.borderColor='#fff';this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.5)';this.style.background='transparent'">
+          <a href="#contact" style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.1);color:#fff;padding:16px 32px;border-radius:var(--btn-radius);font-size:16px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.4);backdrop-filter:blur(4px);transition:all 0.2s;" onmouseover="this.style.borderColor='#fff';this.style.background='rgba(255,255,255,0.18)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.4)';this.style.background='rgba(255,255,255,0.1)'">
             Get Free Estimate
           </a>
         </div>
       </div>
+      
     </div>
   </section>
-<!-- f4hh0 -->
-
-  <div class="ts-f4h-compact" aria-label="Rating Summary" style="display:block">
-    <span class="ts-f4h-stars-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 &middot; 200 reviews
-  </div>
-  <div class="ts-f4h-badge-strip" aria-label="Certifications" style="display:flex">
-    <span style="font-size:11px;color:#666">&#10003; IICRC Certified</span> <span style="font-size:11px;color:#666">&#10003; BBB A+</span> <span style="font-size:11px;color:#666">&#10003; 24/7 Emergency</span>
-  </div>
-<!-- f4hh1 -->
-  <!-- Trust Metrics Bar -->
-  <section style="background:#1B4E8A;padding:28px 0;">
-    <div style="max-width:1200px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;">
-      <div>
-        <div style="font-family:var(--font-heading);font-size:28px;font-weight:800;color:#fff;">15+</div>
-        <div style="font-size:13px;color:rgba(255,255,255,0.8);font-weight:500;margin-top:4px;">Years Experience</div>
-      </div>
-      <div>
-        <div style="font-family:var(--font-heading);font-size:28px;font-weight:800;color:#fff;">500+</div>
-        <div style="font-size:13px;color:rgba(255,255,255,0.8);font-weight:500;margin-top:4px;">Projects Completed</div>
-      </div>
-      <div>
-        <div style="font-family:var(--font-heading);font-size:28px;font-weight:800;color:#fff;">4.9</div>
-        <div style="font-size:13px;color:rgba(255,255,255,0.8);font-weight:500;margin-top:4px;">Star Rating (200+ Reviews)</div>
-      </div>
-      <div>
-        <div style="font-family:var(--font-heading);font-size:28px;font-weight:800;color:#fff;">✓</div>
-        <div style="font-size:13px;color:rgba(255,255,255,0.8);font-weight:500;margin-top:4px;">Licensed & Insured</div>
+<div style="line-height:0;background:#0F1B33;margin:0;overflow:hidden;"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,35 1440,30 L1440,60 L0,60Z" fill="#fff"/></svg></div>
+  <!-- RENDERER-TRUST-BAR -->
+  <!-- Numbered Process Steps -->
+  <section style="background:#F9F6ED;padding:48px 0;">
+    <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
+      <div class="trust-metrics-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px;text-align:center;">
+        <div>
+          <div style="width:64px;height:64px;border-radius:50%;background:#F2C94C;color:#fff;font-family:var(--font-heading);font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 4px 12px #F2C94C44;">01</div>
+          <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1B2A4A;margin-bottom:6px;">Free Inspection</h3>
+          <p style="font-size:13px;color:#333333;line-height:1.5;">Complete property assessment at no cost</p>
+        </div>
+        <div>
+          <div style="width:64px;height:64px;border-radius:50%;background:#F2C94C;color:#fff;font-family:var(--font-heading);font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 4px 12px #F2C94C44;">02</div>
+          <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1B2A4A;margin-bottom:6px;">Detailed Proposal</h3>
+          <p style="font-size:13px;color:#333333;line-height:1.5;">Transparent pricing with material options</p>
+        </div>
+        <div>
+          <div style="width:64px;height:64px;border-radius:50%;background:#F2C94C;color:#fff;font-family:var(--font-heading);font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 4px 12px #F2C94C44;">03</div>
+          <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1B2A4A;margin-bottom:6px;">Expert Installation</h3>
+          <p style="font-size:13px;color:#333333;line-height:1.5;">Certified crews, quality materials</p>
+        </div>
+        <div>
+          <div style="width:64px;height:64px;border-radius:50%;background:#F2C94C;color:#fff;font-family:var(--font-heading);font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 4px 12px #F2C94C44;">04</div>
+          <h3 style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#1B2A4A;margin-bottom:6px;">Satisfaction Guaranteed</h3>
+          <p style="font-size:13px;color:#333333;line-height:1.5;">15+ years, 500+ projects completed</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- Services: image-top -->
   <section id="services" style="background:#fff;padding:var(--section-padding) 0;">
     <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
-      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1F2937;text-align:center;margin-bottom:12px;">Our Water Damage Services</h2>
-      <p style="text-align:center;color:#374151;max-width:600px;margin:0 auto 40px;font-size:16px;line-height:1.6;">Professional water damage solutions for residential and commercial properties in Lukeville.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:24px;">
-        <div style="background:#fff;border:1px solid #eee;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-          <div style="padding:28px 24px 20px;">
-            <img src="images/svc-water-damage.jpeg" alt="water damage restoration service" style="width:56px;height:56px;border-radius:12px;object-fit:cover;margin-bottom:16px;" loading="lazy">
-            <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:10px;">Water Damage Restoration</h3>
-            <p style="color:#374151;font-size:14px;line-height:1.6;margin-bottom:16px;">Complete water extraction, structural drying, and rebuilding. IICRC-certified technicians with industrial equipment restore your property to pre-loss condition.</p>
-            <a href="services.html" style="color:#E8751A;font-weight:600;text-decoration:none;font-size:14px;">Learn More →</a>
+      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1B2A4A;text-align:center;margin-bottom:12px;">Our Water Damage Services</h2>
+      <p style="text-align:center;color:#333333;max-width:600px;margin:0 auto 40px;font-size:16px;line-height:1.6;">Professional water damage solutions for residential and commercial properties in Lukeville.</p>
+      <div class="services-grid" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:24px;">
+        <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-card);transition:transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-card)'">
+          <div class="svc-border" style="border-left:4px solid #F9F6ED;transition:border-color 0.3s;">
+          <div style="position:relative;height:180px;overflow:hidden;">
+            <img fetchpriority="high" src="images/service-restoration-service-restoration-waterdamagerestorati.webp" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" loading="lazy" alt="ffffff?text=Water+Damage+Restoration+residential+house">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, #0F1B33cc 0%, transparent 60%);"></div>
+            <h3 style="position:absolute;bottom:14px;left:18px;font-family:var(--font-heading);font-size:18px;font-weight:700;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.4);margin:0;">Water Damage Restoration</h3>
+          </div>
+          <div style="padding:18px 20px 20px;">
+            <p style="color:#333333;font-size:14px;line-height:1.6;margin-bottom:14px;">Water damage isn't a "schedule it for next week" kind of problem. Our team in Lukeville responds same-day with commercial extractors and drying systems. Insurance paperwork handled — you focus on your family.</p>
+            <a href="./water-damage-restoration" style="color:#F2C94C;font-weight:600;text-decoration:none;font-size:14px;display:inline-flex;align-items:center;gap:6px;">Learn More <svg width="14" height="14" fill="#F2C94C" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+          </div>
           </div>
         </div>
-        <div style="background:#fff;border:1px solid #eee;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-          <div style="padding:28px 24px 20px;">
-            <img src="images/svc-flood.png" alt="flood cleanup service" style="width:56px;height:56px;border-radius:12px;object-fit:cover;margin-bottom:16px;" loading="lazy">
-            <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:10px;">Flood Cleanup</h3>
-            <p style="color:#374151;font-size:14px;line-height:1.6;margin-bottom:16px;">Fast flood response with commercial-grade pumps and dehumidifiers. We remove standing water, sanitize affected areas, and prevent secondary damage.</p>
-            <a href="services.html" style="color:#E8751A;font-weight:600;text-decoration:none;font-size:14px;">Learn More →</a>
+        <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-card);transition:transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-card)'">
+          <div class="svc-border" style="border-left:4px solid #F9F6ED;transition:border-color 0.3s;">
+          <div style="position:relative;height:180px;overflow:hidden;">
+            <img fetchpriority="high" src="images/team-team-waterdamageprofessionalcrewteamserv.webp" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" loading="lazy" alt="Water Damage Repair Company of Lukeville professional team">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, #0F1B33cc 0%, transparent 60%);"></div>
+            <h3 style="position:absolute;bottom:14px;left:18px;font-family:var(--font-heading);font-size:18px;font-weight:700;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.4);margin:0;">Flood Cleanup</h3>
+          </div>
+          <div style="padding:18px 20px 20px;">
+            <p style="color:#333333;font-size:14px;line-height:1.6;margin-bottom:14px;">Flood damage gets worse by the hour. Drywall absorbs water like a sponge, and mold starts growing inside of 48 hours. That's why we run flood response around the clock — the faster we start, the more of your property we save.</p>
+            <a href="./flood-cleanup" style="color:#F2C94C;font-weight:600;text-decoration:none;font-size:14px;display:inline-flex;align-items:center;gap:6px;">Learn More <svg width="14" height="14" fill="#F2C94C" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+          </div>
           </div>
         </div>
-        <div style="background:#fff;border:1px solid #eee;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-          <div style="padding:28px 24px 20px;">
-            <img src="images/svc-mold.jpeg" alt="mold remediation inspection" style="width:56px;height:56px;border-radius:12px;object-fit:cover;margin-bottom:16px;" loading="lazy">
-            <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:10px;">Mold Remediation</h3>
-            <p style="color:#374151;font-size:14px;line-height:1.6;margin-bottom:16px;">Certified mold assessment, containment, and removal. We identify moisture sources, treat affected surfaces, and verify air quality post-remediation.</p>
-            <a href="services.html" style="color:#E8751A;font-weight:600;text-decoration:none;font-size:14px;">Learn More →</a>
+        <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-card);transition:transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-card)'">
+          <div class="svc-border" style="border-left:4px solid #F9F6ED;transition:border-color 0.3s;">
+          <div style="position:relative;height:180px;overflow:hidden;">
+            <img decoding="async" src="images/service-mold-service-mold-moldremediationremovalprote.webp" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" loading="lazy" alt="ffffff?text=Mold+Remediation+materials+closeup">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, #0F1B33cc 0%, transparent 60%);"></div>
+            <h3 style="position:absolute;bottom:14px;left:18px;font-family:var(--font-heading);font-size:18px;font-weight:700;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.4);margin:0;">Mold Remediation</h3>
+          </div>
+          <div style="padding:18px 20px 20px;">
+            <p style="color:#333333;font-size:14px;line-height:1.6;margin-bottom:14px;">Water damage causes mold growth — it's not a question of if, but when. In Arizona's climate, Aspergillus, Penicillium, and Stachybotrys (black mold) colonize within 48-72 hours. Our EPA-compliant remediation protocol stops it before it becomes a health hazard.</p>
+            <a href="./mold-remediation" style="color:#F2C94C;font-weight:600;text-decoration:none;font-size:14px;display:inline-flex;align-items:center;gap:6px;">Learn More <svg width="14" height="14" fill="#F2C94C" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+          </div>
           </div>
         </div>
-        <div style="background:#fff;border:1px solid #eee;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-          <div style="padding:28px 24px 20px;">
-            <img src="images/svc-fire.jpeg" alt="fire damage restoration" style="width:56px;height:56px;border-radius:12px;object-fit:cover;margin-bottom:16px;" loading="lazy">
-            <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:10px;">Fire Damage Restoration</h3>
-            <p style="color:#374151;font-size:14px;line-height:1.6;margin-bottom:16px;">Comprehensive fire and smoke damage cleanup including soot removal, odor elimination, structural repair, and content restoration.</p>
-            <a href="services.html" style="color:#E8751A;font-weight:600;text-decoration:none;font-size:14px;">Learn More →</a>
+        <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-card);transition:transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-card)'">
+          <div class="svc-border" style="border-left:4px solid #F9F6ED;transition:border-color 0.3s;">
+          <div style="position:relative;height:180px;overflow:hidden;">
+            <img decoding="async" src="images/service-restoration-service-restoration-waterdamagerestorati.webp" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" loading="lazy" alt="ffffff?text=Fire+Damage+Restoration+completed+project">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, #0F1B33cc 0%, transparent 60%);"></div>
+            <h3 style="position:absolute;bottom:14px;left:18px;font-family:var(--font-heading);font-size:18px;font-weight:700;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.4);margin:0;">Fire Damage Restoration</h3>
+          </div>
+          <div style="padding:18px 20px 20px;">
+            <p style="color:#333333;font-size:14px;line-height:1.6;margin-bottom:14px;">A fire leaves behind soot, smoke odor, and water from the hoses. Our Lukeville crews handle all three — cleaning, deodorizing, drying, and rebuilding. Start to finish, one company.</p>
+            <a href="./fire-damage-restoration" style="color:#F2C94C;font-weight:600;text-decoration:none;font-size:14px;display:inline-flex;align-items:center;gap:6px;">Learn More <svg width="14" height="14" fill="#F2C94C" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+          </div>
           </div>
         </div>
-        <div style="background:#fff;border:1px solid #eee;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-          <div style="padding:28px 24px 20px;">
-            <img src="images/svc-storm.jpeg" alt="storm damage repair" style="width:56px;height:56px;border-radius:12px;object-fit:cover;margin-bottom:16px;" loading="lazy">
-            <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:10px;">Storm Damage Repair</h3>
-            <p style="color:#374151;font-size:14px;line-height:1.6;margin-bottom:16px;">Emergency board-up, tarping, and full restoration after storms, hurricanes, and severe weather. We work directly with your insurance company.</p>
-            <a href="services.html" style="color:#E8751A;font-weight:600;text-decoration:none;font-size:14px;">Learn More →</a>
+        <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-card);transition:transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-card)'">
+          <div class="svc-border" style="border-left:4px solid #F9F6ED;transition:border-color 0.3s;">
+          <div style="position:relative;height:180px;overflow:hidden;">
+            <img decoding="async" src="images/service-repair-service-repair-waterdamagerepairworkprof.webp" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" loading="lazy" alt="ffffff?text=Storm+Damage+Repair+drone+aerial+view">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, #0F1B33cc 0%, transparent 60%);"></div>
+            <h3 style="position:absolute;bottom:14px;left:18px;font-family:var(--font-heading);font-size:18px;font-weight:700;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.4);margin:0;">Storm Damage Repair</h3>
+          </div>
+          <div style="padding:18px 20px 20px;">
+            <p style="color:#333333;font-size:14px;line-height:1.6;margin-bottom:14px;">Arizona severe weather causes wind, hail, and rain damage that leads to water intrusion. Our storm response follows IICRC guidelines: emergency stabilization, moisture mapping, structural drying, and insurance documentation using Xactimate pricing. RIA (Restoration Industry Association) member.</p>
+            <a href="./storm-damage-repair" style="color:#F2C94C;font-weight:600;text-decoration:none;font-size:14px;display:inline-flex;align-items:center;gap:6px;">Learn More <svg width="14" height="14" fill="#F2C94C" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+          </div>
           </div>
         </div>
-        <div style="background:#fff;border:1px solid #eee;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-          <div style="padding:28px 24px 20px;">
-            <img src="images/svc-sewage.jpeg" alt="sewage cleanup service" style="width:56px;height:56px;border-radius:12px;object-fit:cover;margin-bottom:16px;" loading="lazy">
-            <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:10px;">Sewage Cleanup</h3>
-            <p style="color:#374151;font-size:14px;line-height:1.6;margin-bottom:16px;">Hazardous Category 3 water extraction with full sanitization. EPA-compliant disposal of contaminated materials and antimicrobial treatment.</p>
-            <a href="services.html" style="color:#E8751A;font-weight:600;text-decoration:none;font-size:14px;">Learn More →</a>
+        <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-card);transition:transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-card)'">
+          <div class="svc-border" style="border-left:4px solid #F9F6ED;transition:border-color 0.3s;">
+          <div style="position:relative;height:180px;overflow:hidden;">
+            <img decoding="async" src="images/service-inspect-service-inspect-waterdamageinspectionpro.webp" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" loading="lazy" alt="ffffff?text=Sewage+Cleanup+inspection+process">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, #0F1B33cc 0%, transparent 60%);"></div>
+            <h3 style="position:absolute;bottom:14px;left:18px;font-family:var(--font-heading);font-size:18px;font-weight:700;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.4);margin:0;">Sewage Cleanup</h3>
+          </div>
+          <div style="padding:18px 20px 20px;">
+            <p style="color:#333333;font-size:14px;line-height:1.6;margin-bottom:14px;">Sewage backup is IICRC Category 3 — the highest contamination level. Our Lukeville biohazard crews follow EPA and OSHA protocols: full PPE, sealed extraction, Bio-Cide antimicrobial application, and proper biohazard disposal through licensed facilities. We document everything for your insurance carrier.</p>
+            <a href="./sewage-cleanup" style="color:#F2C94C;font-weight:600;text-decoration:none;font-size:14px;display:inline-flex;align-items:center;gap:6px;">Learn More <svg width="14" height="14" fill="#F2C94C" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+          </div>
           </div>
         </div>
-        <div style="background:#fff;border:1px solid #eee;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-          <div style="padding:28px 24px 20px;">
-            <img src="images/svc-drying.jpeg" alt="structural drying equipment" style="width:56px;height:56px;border-radius:12px;object-fit:cover;margin-bottom:16px;" loading="lazy">
-            <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:10px;">Structural Drying</h3>
-            <p style="color:#374151;font-size:14px;line-height:1.6;margin-bottom:16px;">Industrial air movers, dehumidifiers, and moisture monitoring systems. We dry walls, floors, and ceilings to prevent warping and mold growth.</p>
-            <a href="services.html" style="color:#E8751A;font-weight:600;text-decoration:none;font-size:14px;">Learn More →</a>
+        <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-card);transition:transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-card)'">
+          <div class="svc-border" style="border-left:4px solid #F9F6ED;transition:border-color 0.3s;">
+          <div style="position:relative;height:180px;overflow:hidden;">
+            <img decoding="async" src="images/team-team-waterdamageprofessionalcrewteamserv.webp" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" loading="lazy" alt="Water Damage Repair Company of Lukeville professional team">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, #0F1B33cc 0%, transparent 60%);"></div>
+            <h3 style="position:absolute;bottom:14px;left:18px;font-family:var(--font-heading);font-size:18px;font-weight:700;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.4);margin:0;">Structural Drying</h3>
+          </div>
+          <div style="padding:18px 20px 20px;">
+            <p style="color:#333333;font-size:14px;line-height:1.6;margin-bottom:14px;">Walls, subfloors, concrete slabs — they all dry at different rates. Our equipment setup accounts for that. Daily moisture monitoring tells us exactly when each material reaches its dry standard. In Arizona's humidity, that precision matters.</p>
+            <a href="./structural-drying" style="color:#F2C94C;font-weight:600;text-decoration:none;font-size:14px;display:inline-flex;align-items:center;gap:6px;">Learn More <svg width="14" height="14" fill="#F2C94C" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+          </div>
           </div>
         </div>
-        <div style="background:#fff;border:1px solid #eee;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-          <div style="padding:28px 24px 20px;">
-            <img src="images/svc-content.jpeg" alt="content restoration service" style="width:56px;height:56px;border-radius:12px;object-fit:cover;margin-bottom:16px;" loading="lazy">
-            <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:10px;">Content Restoration</h3>
-            <p style="color:#374151;font-size:14px;line-height:1.6;margin-bottom:16px;">Specialized cleaning and restoration of personal belongings, furniture, electronics, and documents damaged by water, fire, or mold.</p>
-            <a href="services.html" style="color:#E8751A;font-weight:600;text-decoration:none;font-size:14px;">Learn More →</a>
+        <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-card);transition:transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-card)'">
+          <div class="svc-border" style="border-left:4px solid #F9F6ED;transition:border-color 0.3s;">
+          <div style="position:relative;height:180px;overflow:hidden;">
+            <img decoding="async" src="images/service-restoration-service-restoration-waterdamagerestorati.webp" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" loading="lazy" alt="ffffff?text=Content+Restoration+equipment+tools">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, #0F1B33cc 0%, transparent 60%);"></div>
+            <h3 style="position:absolute;bottom:14px;left:18px;font-family:var(--font-heading);font-size:18px;font-weight:700;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.4);margin:0;">Content Restoration</h3>
+          </div>
+          <div style="padding:18px 20px 20px;">
+            <p style="color:#333333;font-size:14px;line-height:1.6;margin-bottom:14px;">Water damage destroys personal property if it's not treated quickly. Our content restoration facility uses ultrasonic cleaning for hard goods, Esporta wash systems for textiles, and vacuum freeze-drying for documents and photographs. Chain-of-custody inventory with before/after documentation for your insurance claim.</p>
+            <a href="./content-restoration" style="color:#F2C94C;font-weight:600;text-decoration:none;font-size:14px;display:inline-flex;align-items:center;gap:6px;">Learn More <svg width="14" height="14" fill="#F2C94C" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+          </div>
           </div>
         </div>
       </div>
@@ -265,27 +365,27 @@ body.ua-f4h .ts-f4h-counter-inline{display:inline}
   <!-- Why Choose Us -->
   <section style="background:var(--color-bg-alt, #f8f9fa);padding:var(--section-padding) 0;">
     <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
-      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1F2937;text-align:center;margin-bottom:40px;">Why Choose Water Damage Repair Company of Lukeville?</h2>
+      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1B2A4A;text-align:center;margin-bottom:40px;">Why Choose Water Damage Repair Company of Lukeville?</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:32px;">
         <div style="text-align:center;padding:32px 24px;">
           <div style="font-size:40px;margin-bottom:16px;">🏆</div>
-          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:12px;">Experience You Can Trust</h3>
-          <p style="color:#374151;font-size:15px;line-height:1.6;">With 15+ years serving Lukeville, we have the expertise to handle any water damage project, large or small.</p>
+          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1B2A4A;margin-bottom:12px;">No Upfront Payment</h3>
+          <p style="color:#333333;font-size:15px;line-height:1.6;">If insurance covers it, you pay nothing out of pocket until the claim settles. We've done this enough to know the process works.</p>
         </div>
         <div style="text-align:center;padding:32px 24px;">
           <div style="font-size:40px;margin-bottom:16px;">✓</div>
-          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:12px;">Licensed & Insured</h3>
-          <p style="color:#374151;font-size:15px;line-height:1.6;">Fully licensed, bonded, and insured for your protection. We meet all state and local requirements for water damage contractors.</p>
+          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1B2A4A;margin-bottom:12px;">60-Minute Response</h3>
+          <p style="color:#333333;font-size:15px;line-height:1.6;">We don't just say we're fast. Our average arrival time in Lukeville is 47 minutes. GPS-tracked trucks, pre-loaded with equipment, staged across the metro.</p>
         </div>
         <div style="text-align:center;padding:32px 24px;">
           <div style="font-size:40px;margin-bottom:16px;">⭐</div>
-          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:12px;">Quality Guaranteed</h3>
-          <p style="color:#374151;font-size:15px;line-height:1.6;">We stand behind our work with comprehensive warranties. 24/7 Emergency Service — that's our commitment to excellence.</p>
+          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1B2A4A;margin-bottom:12px;">Thermal Imaging</h3>
+          <p style="color:#333333;font-size:15px;line-height:1.6;">We don't guess where the moisture is hiding. FLIR thermal cameras show us exactly what's wet behind walls and under floors — before we start cutting.</p>
         </div>
         <div style="text-align:center;padding:32px 24px;">
           <div style="font-size:40px;margin-bottom:16px;">💬</div>
-          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:12px;">Customer-First Service</h3>
-          <p style="color:#374151;font-size:15px;line-height:1.6;">4.9-star rating from 200+ verified customers. We treat every property like our own.</p>
+          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1B2A4A;margin-bottom:12px;">Own Our Equipment</h3>
+          <p style="color:#333333;font-size:15px;line-height:1.6;">We own every piece of equipment on our trucks. No renting, no waiting for deliveries. When we show up, we start working immediately.</p>
         </div>
       </div>
     </div>
@@ -294,51 +394,117 @@ body.ua-f4h .ts-f4h-counter-inline{display:inline}
   <!-- How It Works -->
   <section style="background:#fff;padding:var(--section-padding) 0;">
     <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
-      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1F2937;text-align:center;margin-bottom:40px;">How It Works</h2>
+      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1B2A4A;text-align:center;margin-bottom:40px;">How It Works</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:32px;">
         <div style="text-align:center;position:relative;">
-          <div style="width:56px;height:56px;border-radius:50%;background:#E8751A;color:#fff;font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">1</div>
-          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:8px;">Emergency Call</h3>
-          <p style="color:#374151;font-size:14px;line-height:1.6;">Call us 24/7 at (800) 819-6517. Our team responds within 60 minutes.</p>
+          <div style="width:56px;height:56px;border-radius:50%;background:#F2C94C;color:#fff;font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">1</div>
+          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1B2A4A;margin-bottom:8px;">Call Us</h3>
+          <p style="color:#333333;font-size:14px;line-height:1.6;">Dial (800) 819-6517 any time — day or night. We pick up live. No phone trees, no voicemail.</p>
         </div>
         <div style="text-align:center;position:relative;">
-          <div style="width:56px;height:56px;border-radius:50%;background:#E8751A;color:#fff;font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">2</div>
-          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:8px;">Assessment</h3>
-          <p style="color:#374151;font-size:14px;line-height:1.6;">We inspect and document all damage, working with your insurance from day one.</p>
+          <div style="width:56px;height:56px;border-radius:50%;background:#F2C94C;color:#fff;font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">2</div>
+          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1B2A4A;margin-bottom:8px;">Inspect & Plan</h3>
+          <p style="color:#333333;font-size:14px;line-height:1.6;">Our tech inspects every affected area, takes moisture readings, documents everything for insurance.</p>
         </div>
         <div style="text-align:center;position:relative;">
-          <div style="width:56px;height:56px;border-radius:50%;background:#E8751A;color:#fff;font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">3</div>
-          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:8px;">Mitigation</h3>
-          <p style="color:#374151;font-size:14px;line-height:1.6;">Industrial-grade water extraction, drying, and antimicrobial treatment begins immediately.</p>
+          <div style="width:56px;height:56px;border-radius:50%;background:#F2C94C;color:#fff;font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">3</div>
+          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1B2A4A;margin-bottom:8px;">Extract & Restore</h3>
+          <p style="color:#333333;font-size:14px;line-height:1.6;">Industrial air movers, dehumidifiers, and daily monitoring until every surface reads dry.</p>
         </div>
         <div style="text-align:center;position:relative;">
-          <div style="width:56px;height:56px;border-radius:50%;background:#E8751A;color:#fff;font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">4</div>
-          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1F2937;margin-bottom:8px;">Restoration</h3>
-          <p style="color:#374151;font-size:14px;line-height:1.6;">Full restoration to pre-loss condition. We handle everything so you don't have to.</p>
+          <div style="width:56px;height:56px;border-radius:50%;background:#F2C94C;color:#fff;font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">4</div>
+          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:700;color:#1B2A4A;margin-bottom:8px;">Final Walkthrough</h3>
+          <p style="color:#333333;font-size:14px;line-height:1.6;">Drywall, flooring, paint — we put it back together and handle the insurance paperwork.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Recent Projects -->
+  <section style="background:var(--color-bg-alt, #f8f9fa);padding:var(--section-padding) 0;">
+    <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
+      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1B2A4A;text-align:center;margin-bottom:40px;">Recent Projects</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:24px;">
+        <div class="gallery-card" style="border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--shadow-card);position:relative;cursor:pointer;" onmouseover="this.querySelector('.gallery-overlay').style.opacity='1';this.querySelector('img').style.transform='scale(1.05)'" onmouseout="this.querySelector('.gallery-overlay').style.opacity='0';this.querySelector('img').style.transform='scale(1)'">
+          <div style="overflow:hidden;height:260px;">
+            <img decoding="async" src="images/service-restoration-service-restoration-waterdamagerestorati.webp" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" loading="lazy" alt="ffffff?text=Water+Damage+Restoration+completed+project">
+          </div>
+          <div class="gallery-overlay" style="position:absolute;inset:0;background:linear-gradient(to top, #0F1B33dd 0%, #1B2A4A44 40%, transparent 70%);display:flex;align-items:flex-end;padding:20px;opacity:0;transition:opacity 0.3s ease;">
+            <div>
+              <h3 style="font-family:var(--font-heading);font-size:17px;font-weight:700;color:#fff;margin-bottom:4px;">Water Damage Restoration</h3>
+              <p style="color:rgba(255,255,255,0.8);font-size:13px;">Lukeville, AZ</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-card" style="border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--shadow-card);position:relative;cursor:pointer;" onmouseover="this.querySelector('.gallery-overlay').style.opacity='1';this.querySelector('img').style.transform='scale(1.05)'" onmouseout="this.querySelector('.gallery-overlay').style.opacity='0';this.querySelector('img').style.transform='scale(1)'">
+          <div style="overflow:hidden;height:260px;">
+            <img decoding="async" src="images/service-extraction-service-extraction-waterdamageextraction.webp" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" loading="lazy" alt="ffffff?text=Flood+Cleanup+drone+aerial+view">
+          </div>
+          <div class="gallery-overlay" style="position:absolute;inset:0;background:linear-gradient(to top, #0F1B33dd 0%, #1B2A4A44 40%, transparent 70%);display:flex;align-items:flex-end;padding:20px;opacity:0;transition:opacity 0.3s ease;">
+            <div>
+              <h3 style="font-family:var(--font-heading);font-size:17px;font-weight:700;color:#fff;margin-bottom:4px;">Flood Cleanup</h3>
+              <p style="color:rgba(255,255,255,0.8);font-size:13px;">Lukeville, AZ</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-card" style="border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--shadow-card);position:relative;cursor:pointer;" onmouseover="this.querySelector('.gallery-overlay').style.opacity='1';this.querySelector('img').style.transform='scale(1.05)'" onmouseout="this.querySelector('.gallery-overlay').style.opacity='0';this.querySelector('img').style.transform='scale(1)'">
+          <div style="overflow:hidden;height:260px;">
+            <img decoding="async" src="images/service-mold-service-mold-moldremediationremovalprote.webp" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" loading="lazy" alt="ffffff?text=Mold+Remediation+inspection+process">
+          </div>
+          <div class="gallery-overlay" style="position:absolute;inset:0;background:linear-gradient(to top, #0F1B33dd 0%, #1B2A4A44 40%, transparent 70%);display:flex;align-items:flex-end;padding:20px;opacity:0;transition:opacity 0.3s ease;">
+            <div>
+              <h3 style="font-family:var(--font-heading);font-size:17px;font-weight:700;color:#fff;margin-bottom:4px;">Mold Remediation</h3>
+              <p style="color:rgba(255,255,255,0.8);font-size:13px;">Lukeville, AZ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:32px;">
+        <a href="./gallery" style="color:#F2C94C;font-weight:600;text-decoration:none;font-size:16px;">View All Projects →</a>
+      </div>
+    </div>
+  </section>
+<div style="line-height:0;background:transparent;margin:0;overflow:hidden;"><svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><polygon points="0,50 1440,0 1440,50" fill="#0F1B33"/></svg></div>
   <!-- Testimonials -->
-  <section style="background:#0F2E52;padding:var(--section-padding) 0;">
+  <section style="background:#0F1B33;padding:var(--section-padding) 0;">
     <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
       <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#fff;text-align:center;margin-bottom:40px;">What Our Customers Say</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:24px;">
-        <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--card-radius);padding:32px;">
-          <div style="color:#F59E0B;font-size:18px;margin-bottom:12px;">★★★★★</div>
-          <p style="color:rgba(255,255,255,0.9);font-size:15px;line-height:1.7;margin-bottom:16px;font-style:italic;">"Our basement flooded at 2am and Water Damage Repair Company of Lukeville had a team here within the hour. They saved most of our belongings and worked directly with our insurance. Can't thank them enough."</p>
-          <div style="font-weight:600;color:#fff;font-size:14px;">— Barbara C., Lukeville</div>
+        <div style="background:rgba(255,255,255,0.06);border-left:3px solid #F2C94C;border-radius:var(--card-radius);padding:32px;position:relative;">
+          <div style="position:absolute;top:16px;right:20px;font-family:Georgia,serif;font-size:64px;line-height:1;color:#F2C94C;opacity:0.25;">“</div>
+          <div style="color:#F59E0B;font-size:18px;margin-bottom:14px;">★★★★★</div>
+          <p style="color:rgba(255,255,255,0.92);font-size:15px;line-height:1.7;margin-bottom:20px;font-style:italic;position:relative;">"Had mold growing behind our bathroom wall for who knows how long. Water Damage Repair Company of Lukeville found it with their thermal camera, cut out the affected area, treated everything, and rebuilt it. Air test came back clean. Really professional crew."</p>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:44px;height:44px;border-radius:50%;background:#F2C94C;color:#fff;font-family:var(--font-heading);font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">P</div>
+            <div>
+              <div style="font-weight:600;color:#fff;font-size:14px;">Paul L.</div>
+              <div style="font-size:12px;color:rgba(255,255,255,0.6);">Lukeville</div>
+            </div>
+          </div>
         </div>
-        <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--card-radius);padding:32px;">
-          <div style="color:#F59E0B;font-size:18px;margin-bottom:12px;">★★★★★</div>
-          <p style="color:rgba(255,255,255,0.9);font-size:15px;line-height:1.7;margin-bottom:16px;font-style:italic;">"Professional, thorough, and compassionate during a really stressful time. Water Damage Repair Company of Lukeville handled our water damage restoration from start to finish. Our home looks better than before."</p>
-          <div style="font-weight:600;color:#fff;font-size:14px;">— Mark W., Lukeville</div>
+        <div style="background:rgba(255,255,255,0.06);border-left:3px solid #F2C94C;border-radius:var(--card-radius);padding:32px;position:relative;">
+          <div style="position:absolute;top:16px;right:20px;font-family:Georgia,serif;font-size:64px;line-height:1;color:#F2C94C;opacity:0.25;">“</div>
+          <div style="color:#F59E0B;font-size:18px;margin-bottom:14px;">★★★★★</div>
+          <p style="color:rgba(255,255,255,0.92);font-size:15px;line-height:1.7;margin-bottom:20px;font-style:italic;position:relative;">"Dishwasher line broke. Water everywhere. These guys showed up fast, pulled the flooring, dried the subfloor, and put in new laminate. Even matched the existing stuff in the rest of the house. Impressed."</p>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:44px;height:44px;border-radius:50%;background:#F2C94C;color:#fff;font-family:var(--font-heading);font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">D</div>
+            <div>
+              <div style="font-weight:600;color:#fff;font-size:14px;">Debbie O.</div>
+              <div style="font-size:12px;color:rgba(255,255,255,0.6);">Lukeville</div>
+            </div>
+          </div>
         </div>
-        <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--card-radius);padding:32px;">
-          <div style="color:#F59E0B;font-size:18px;margin-bottom:12px;">★★★★★</div>
-          <p style="color:rgba(255,255,255,0.9);font-size:15px;line-height:1.7;margin-bottom:16px;font-style:italic;">"Discovered a hidden leak that caused significant damage. Water Damage Repair Company of Lukeville found and fixed the source, then restored everything. Their IICRC-certified team was exceptional."</p>
-          <div style="font-weight:600;color:#fff;font-size:14px;">— Dorothy O., Lukeville</div>
+        <div style="background:rgba(255,255,255,0.06);border-left:3px solid #F2C94C;border-radius:var(--card-radius);padding:32px;position:relative;">
+          <div style="position:absolute;top:16px;right:20px;font-family:Georgia,serif;font-size:64px;line-height:1;color:#F2C94C;opacity:0.25;">“</div>
+          <div style="color:#F59E0B;font-size:18px;margin-bottom:14px;">★★★★★</div>
+          <p style="color:rgba(255,255,255,0.92);font-size:15px;line-height:1.7;margin-bottom:20px;font-style:italic;position:relative;">"Toilet supply line cracked overnight. Woke up to water running down the hallway. Water Damage Repair Company of Lukeville extracted the water, pulled the wet carpet, and had the place dried out by end of week. Handled our USAA claim directly."</p>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:44px;height:44px;border-radius:50%;background:#F2C94C;color:#fff;font-family:var(--font-heading);font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">M</div>
+            <div>
+              <div style="font-weight:600;color:#fff;font-size:14px;">Maria V.</div>
+              <div style="font-size:12px;color:rgba(255,255,255,0.6);">Ajo</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -347,32 +513,87 @@ body.ua-f4h .ts-f4h-counter-inline{display:inline}
   <!-- Service Areas -->
   <section id="areas" style="background:#fff;padding:var(--section-padding) 0;">
     <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
-      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1F2937;text-align:center;margin-bottom:12px;">Areas We Serve</h2>
-      <p style="text-align:center;color:#374151;max-width:600px;margin:0 auto 32px;font-size:16px;">Proudly serving Lukeville and surrounding communities with professional water damage services.</p>
+      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1B2A4A;text-align:center;margin-bottom:12px;">Areas We Serve</h2>
+      <p style="text-align:center;color:#333333;max-width:600px;margin:0 auto 32px;font-size:16px;">Water damage service for Lukeville, Lukeville, Ajo, and the surrounding metro area.</p>
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;">
-        <span style="background:#F5F7FA;color:#1B4E8A;padding:8px 20px;border-radius:20px;font-size:14px;font-weight:500;">Lukeville</span>
-        <span style="background:#F5F7FA;color:#1B4E8A;padding:8px 20px;border-radius:20px;font-size:14px;font-weight:500;">Ajo</span>
+        <a href="./" style="background:#1B2A4A;color:#fff;padding:8px 20px;border-radius:20px;font-size:14px;font-weight:600;text-decoration:none;transition:opacity .2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Lukeville</a>
+        <a href="./ajo-az" style="background:#F9F6ED;color:#1B2A4A;padding:8px 20px;border-radius:20px;font-size:14px;font-weight:500;text-decoration:none;transition:background .2s,color .2s;" onmouseover="this.style.background='#1B2A4A';this.style.color='#fff'" onmouseout="this.style.background='#F9F6ED';this.style.color='#1B2A4A'">Ajo</a>
       </div>
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section id="faq" style="background:#fff;padding:var(--section-padding) 0;">
+    <div style="max-width:800px;margin:0 auto;padding:0 20px;">
+      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1B2A4A;text-align:center;margin-bottom:40px;">Frequently Asked Questions</h2>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div class="faq-item" style="border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;">
+          <button onclick="this.parentElement.classList.toggle('open');this.querySelector('.faq-icon').textContent=this.parentElement.classList.contains('open')?'−':'+'" style="width:100%;padding:18px 20px;background:#fff;border:none;text-align:left;font-family:var(--font-heading);font-size:16px;font-weight:600;color:#1B2A4A;cursor:pointer;display:flex;justify-content:space-between;align-items:center;">
+            Do you work with my insurance company?
+            <span class="faq-icon" style="font-size:22px;color:#F2C94C;flex-shrink:0;margin-left:12px;">+</span>
+          </button>
+          <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
+            <p style="padding:0 20px 18px;color:#333333;font-size:15px;line-height:1.7;">Most homeowner policies cover sudden water damage (pipe bursts, appliance failures). We handle the entire claims process — documentation, estimate submission, adjuster coordination. You focus on your family, we handle the paperwork.</p>
+          </div>
+        </div>
+        <div class="faq-item" style="border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;">
+          <button onclick="this.parentElement.classList.toggle('open');this.querySelector('.faq-icon').textContent=this.parentElement.classList.contains('open')?'−':'+'" style="width:100%;padding:18px 20px;background:#fff;border:none;text-align:left;font-family:var(--font-heading);font-size:16px;font-weight:600;color:#1B2A4A;cursor:pointer;display:flex;justify-content:space-between;align-items:center;">
+            Will I have to pay anything upfront?
+            <span class="faq-icon" style="font-size:22px;color:#F2C94C;flex-shrink:0;margin-left:12px;">+</span>
+          </button>
+          <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
+            <p style="padding:0 20px 18px;color:#333333;font-size:15px;line-height:1.7;">If your insurance covers the loss, we bill them directly. You typically pay your deductible and that's it. For non-insured work, we give you a free estimate upfront — no surprises.</p>
+          </div>
+        </div>
+        <div class="faq-item" style="border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;">
+          <button onclick="this.parentElement.classList.toggle('open');this.querySelector('.faq-icon').textContent=this.parentElement.classList.contains('open')?'−':'+'" style="width:100%;padding:18px 20px;background:#fff;border:none;text-align:left;font-family:var(--font-heading);font-size:16px;font-weight:600;color:#1B2A4A;cursor:pointer;display:flex;justify-content:space-between;align-items:center;">
+            Are your restoration techs certified?
+            <span class="faq-icon" style="font-size:22px;color:#F2C94C;flex-shrink:0;margin-left:12px;">+</span>
+          </button>
+          <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
+            <p style="padding:0 20px 18px;color:#333333;font-size:15px;line-height:1.7;">Yes. Licensed contractor in Arizona, fully insured, and every tech is IICRC-certified. We carry workers comp too — some restoration companies skip that, which puts you at liability risk. We don't.</p>
+          </div>
+        </div>
+        <div class="faq-item" style="border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;">
+          <button onclick="this.parentElement.classList.toggle('open');this.querySelector('.faq-icon').textContent=this.parentElement.classList.contains('open')?'−':'+'" style="width:100%;padding:18px 20px;background:#fff;border:none;text-align:left;font-family:var(--font-heading);font-size:16px;font-weight:600;color:#1B2A4A;cursor:pointer;display:flex;justify-content:space-between;align-items:center;">
+            Is mold a risk if my house got flooded?
+            <span class="faq-icon" style="font-size:22px;color:#F2C94C;flex-shrink:0;margin-left:12px;">+</span>
+          </button>
+          <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
+            <p style="padding:0 20px 18px;color:#333333;font-size:15px;line-height:1.7;">Yes — mold can start growing within 24-48 hours in Arizona's humidity. That's why fast response matters. We start drying immediately and use antimicrobial treatments to prevent growth. If we find existing mold, we handle remediation too.</p>
+          </div>
+        </div>
+        <div class="faq-item" style="border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;">
+          <button onclick="this.parentElement.classList.toggle('open');this.querySelector('.faq-icon').textContent=this.parentElement.classList.contains('open')?'−':'+'" style="width:100%;padding:18px 20px;background:#fff;border:none;text-align:left;font-family:var(--font-heading);font-size:16px;font-weight:600;color:#1B2A4A;cursor:pointer;display:flex;justify-content:space-between;align-items:center;">
+            How long does water damage restoration take?
+            <span class="faq-icon" style="font-size:22px;color:#F2C94C;flex-shrink:0;margin-left:12px;">+</span>
+          </button>
+          <div class="faq-answer" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;">
+            <p style="padding:0 20px 18px;color:#333333;font-size:15px;line-height:1.7;">Depends on how bad it is. A single-room pipe burst — maybe 5-7 days. Full house flood — 2-4 weeks including reconstruction. We give you a realistic timeline on day one and update you as the job progresses.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do you work with my insurance company?","acceptedAnswer":{"@type":"Answer","text":"Most homeowner policies cover sudden water damage (pipe bursts, appliance failures). We handle the entire claims process — documentation, estimate submission, adjuster coordination. You focus on your family, we handle the paperwork."}},{"@type":"Question","name":"Will I have to pay anything upfront?","acceptedAnswer":{"@type":"Answer","text":"If your insurance covers the loss, we bill them directly. You typically pay your deductible and that's it. For non-insured work, we give you a free estimate upfront — no surprises."}},{"@type":"Question","name":"Are your restoration techs certified?","acceptedAnswer":{"@type":"Answer","text":"Yes. Licensed contractor in Arizona, fully insured, and every tech is IICRC-certified. We carry workers comp too — some restoration companies skip that, which puts you at liability risk. We don't."}},{"@type":"Question","name":"Is mold a risk if my house got flooded?","acceptedAnswer":{"@type":"Answer","text":"Yes — mold can start growing within 24-48 hours in Arizona's humidity. That's why fast response matters. We start drying immediately and use antimicrobial treatments to prevent growth. If we find existing mold, we handle remediation too."}},{"@type":"Question","name":"How long does water damage restoration take?","acceptedAnswer":{"@type":"Answer","text":"Depends on how bad it is. A single-room pipe burst — maybe 5-7 days. Full house flood — 2-4 weeks including reconstruction. We give you a realistic timeline on day one and update you as the job progresses."}}]}</script>
+<div style="line-height:0;background:transparent;margin:0;overflow:hidden;"><svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,50 Q720,0 1440,50 L1440,50 L0,50Z" fill="#1B2A4A"/></svg></div>
   <!-- Final CTA -->
-  <section id="contact" style="background:linear-gradient(135deg, #1B4E8A 0%, #0F2E52 100%);padding:var(--section-padding) 0;text-align:center;">
+  <section id="contact" style="background:linear-gradient(135deg, #1B2A4A 0%, #0F1B33 100%);padding:var(--section-padding) 0;text-align:center;">
     <div style="max-width:700px;margin:0 auto;padding:0 20px;">
-      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#fff;margin-bottom:16px;">Ready to Get Started?</h2>
-      <p style="color:rgba(255,255,255,0.85);font-size:18px;line-height:1.6;margin-bottom:32px;">Contact Water Damage Repair Company of Lukeville today for a free consultation. 15+ years of trusted water damage service in Lukeville.</p>
+      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#fff;margin-bottom:16px;">Got Water Damage? Get Help Today.</h2>
+      <p style="color:rgba(255,255,255,0.85);font-size:18px;line-height:1.6;margin-bottom:32px;">Our Lukeville team is standing by at (800) 819-6517. Emergency response in under 60 minutes. No obligation estimate.</p>
       <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
-        <a href="tel:8008196517" style="background:#E8751A;color:#fff;padding:16px 36px;border-radius:var(--btn-radius);font-size:18px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;" aria-label="Call (800) 819-6517">
+        <a href="tel:8008196517" style="background:#F2C94C;color:#fff;padding:16px 36px;border-radius:var(--btn-radius);font-size:18px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;" aria-label="Call (800) 819-6517">
           <svg width="20" height="20" fill="#fff" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.01l-2.2 2.21z"/></svg>
           Call (800) 819-6517
         </a>
-        <a href="mailto:info@lukeville-az.waterdamageremovalbrooklyn.com" style="color:#fff;padding:16px 36px;border-radius:var(--btn-radius);font-size:16px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5);">Get Free Estimate</a>
+        <a href="#contact" style="color:#fff;padding:16px 36px;border-radius:var(--btn-radius);font-size:16px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5);">Get Free Estimate</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer style="background:#0F2E52;color:rgba(255,255,255,0.8);padding:48px 0 0;" role="contentinfo">
+  <footer style="background:#0F1B33;color:rgba(255,255,255,0.8);padding:48px 0 0;" role="contentinfo">
     <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:40px;margin-bottom:40px;">
         <!-- Company -->
@@ -384,26 +605,25 @@ body.ua-f4h .ts-f4h-counter-inline{display:inline}
         <div>
           <div style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#fff;margin-bottom:16px;">Quick Links</div>
           <a href="./" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Home</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Services</a>
-          <a href="./about.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">About</a>
-          <a href="./locations.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Service Areas</a>
-          <a href="./reviews.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Reviews</a>
-          <a href="./contact.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Contact</a>
+          <a href="./about" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">About</a>
+          <a href="./locations" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Locations</a>
+          <a href="./reviews" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Reviews</a>
+          <a href="./contact" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Contact</a>
         </div>
         <!-- Services -->
         <div>
           <div style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#fff;margin-bottom:16px;">Services</div>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Water Damage Restoration</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Flood Cleanup</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Mold Remediation</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Fire Damage Restoration</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Storm Damage Repair</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Sewage Cleanup</a>
+          <a href="./water-damage-restoration" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Water Damage Restoration</a>
+          <a href="./flood-cleanup" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Flood Cleanup</a>
+          <a href="./mold-remediation" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Mold Remediation</a>
+          <a href="./fire-damage-restoration" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Fire Damage Restoration</a>
+          <a href="./storm-damage-repair" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Storm Damage Repair</a>
+          <a href="./sewage-cleanup" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Sewage Cleanup</a>
         </div>
         <!-- Contact -->
         <div>
           <div style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#fff;margin-bottom:16px;">Contact Us</div>
-          <a href="tel:8008196517" style="display:block;color:#E8751A;text-decoration:none;font-size:16px;font-weight:700;padding:4px 0;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
+          <a href="tel:8008196517" style="display:block;color:#F2C94C;text-decoration:none;font-size:16px;font-weight:700;padding:4px 0;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
           <a href="mailto:info@lukeville-az.waterdamageremovalbrooklyn.com" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">info@lukeville-az.waterdamageremovalbrooklyn.com</a>
           
           <p style="font-size:14px;padding:4px 0;">Hours: 24/7 Emergency Service</p>
@@ -421,16 +641,38 @@ body.ua-f4h .ts-f4h-counter-inline{display:inline}
       <div style="border-top:1px solid rgba(255,255,255,0.1);padding:20px 0;text-align:center;font-size:13px;color:rgba(255,255,255,0.5);">
         © 2026 Water Damage Repair Company of Lukeville. All rights reserved.
         <span style="margin:0 8px;">|</span>
-        <a href="./privacy.html" style="color:rgba(255,255,255,0.5);text-decoration:none;">Privacy Policy</a>
+        <a href="./privacy" style="color:rgba(255,255,255,0.5);text-decoration:none;">Privacy Policy</a>
         <span style="margin:0 8px;">|</span>
-        <a href="./terms.html" style="color:rgba(255,255,255,0.5);text-decoration:none;">Terms of Service</a>
+        <a href="./terms" style="color:rgba(255,255,255,0.5);text-decoration:none;">Terms of Service</a>
       </div>
     </div>
   </footer>
   <script>
-  document.querySelectorAll('#mobile-menu a').forEach(function(a){
-    a.addEventListener('click',function(){document.getElementById('mobile-menu').classList.remove('open');});
-  });
+  (function(){
+    var btn=document.querySelector('.hamburger-btn');
+    var menu=document.getElementById('mobile-menu');
+    if(!btn||!menu)return;
+    btn.addEventListener('click',function(){
+      var open=menu.classList.toggle('open');
+      btn.classList.toggle('open',open);
+      btn.setAttribute('aria-expanded',open?'true':'false');
+      document.body.style.overflow=open?'hidden':'';
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        menu.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+        document.body.style.overflow='';
+      });
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'&&menu.classList.contains('open')){
+        menu.classList.remove('open');btn.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');document.body.style.overflow='';
+      }
+    });
+  })();
   </script>
   <script>
   document.querySelectorAll('.faq-item').forEach(function(item){
@@ -444,8 +686,64 @@ body.ua-f4h .ts-f4h-counter-inline{display:inline}
       if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
     });
   });
-  </script><!-- f4hj0 -->
-<script>(function(){var c='ua-f4h',e=['mousemove','scroll','touchstart','click','keydown'],b=document.body;function h(){b.classList.add(c);e.forEach(function(v){window.removeEventListener(v,h,{passive:true})});}e.forEach(function(v){window.addEventListener(v,h,{passive:true});});})();</script>
-<!-- f4hj1 -->
+  </script>
+<script>
+(function() {
+  var trackingNumber = '(800) 819-6517';
+  var websiteId = 'fran-1771836862992-ad190p';
+  
+  function replacePhoneNumbers() {
+    var phoneRegex = /[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}/g;
+    var elements = document.querySelectorAll('a[href^="tel:"], span, p, div, h1, h2, h3, h4, h5, h6, li, td, button');
+    elements.forEach(function(element) {
+      if (element.tagName === "A" && element.href && element.href.startsWith("tel:")) {
+        element.href = "tel:" + trackingNumber;
+        element.textContent = formatPhoneNumber(trackingNumber);
+      } else if (element.children.length === 0 && element.textContent.match(phoneRegex)) {
+        element.textContent = element.textContent.replace(phoneRegex, formatPhoneNumber(trackingNumber));
+      }
+    });
+  }
+  
+  function formatPhoneNumber(number) {
+    var cleaned = number.replace(/\D/g, "");
+    if (cleaned.length === 11 && cleaned.charAt(0) === "1") {
+      cleaned = cleaned.substr(1);
+    }
+    return "(" + cleaned.substr(0,3) + ") " + cleaned.substr(3,3) + "-" + cleaned.substr(6);
+  }
+  
+  function trackCallClick() {
+    if (typeof gtag !== "undefined") {
+      gtag("event", "click_to_call", {
+        "event_category": "engagement",
+        "event_label": trackingNumber,
+        "value": websiteId
+      });
+    }
+    fetch("/track/call-click", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        websiteId: websiteId,
+        trackingNumber: trackingNumber,
+        timestamp: new Date().toISOString()
+      })
+    }).catch(function(){});
+  }
+  
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", replacePhoneNumbers);
+  } else {
+    replacePhoneNumbers();
+  }
+  
+  document.addEventListener("click", function(e) {
+    var el = e.target;
+    while (el && el.tagName !== "A") el = el.parentElement;
+    if (el && el.href && el.href.startsWith("tel:")) trackCallClick();
+  });
+})();
+</script>
 </body>
 </html>

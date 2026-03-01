@@ -4,35 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="custom">
-  <title>Our Services | Water Damage Repair Company of Luke Air Force Base - Luke Air Force Base Water Damage</title>
-  <meta name="description" content="Our Services - Water Damage Repair Company of Luke Air Force Base in Luke Air Force Base, AZ. Professional water damage services. Call (800) 819-6517.">
+  <title>Our Water Damage Services | Water Damage Repair Company of Luke Air Force Base - Luke Air Force Base Water Damage</title>
+  <meta name="description" content="Our Water Damage Services - Water Damage Repair Company of Luke Air Force Base in Luke Air Force Base, AZ. Professional water damage services. Call (800) 819-6517.">
   <!-- ASSEMBLED-PAGE v1 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@600;700;800&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
   <style>
   :root {
-    --color-primary: #1B4E8A;
-    --color-primary-dark: #0F2E52;
-    --color-secondary: #3A7BD5;
-    --color-accent: #E8751A;
+    --color-primary: #1B2A4A;
+    --color-primary-dark: #0F1B33;
+    --color-secondary: #263B63;
+    --color-accent: #F2C94C;
     --color-bg-light: #ffffff;
-    --color-bg-alt: #F5F7FA;
-    --color-bg-dark: #0F2E52;
-    --color-text: #374151;
+    --color-bg-alt: #F9F6ED;
+    --color-bg-dark: #0F1B33;
+    --color-text: #333333;
     --color-text-light: #666666;
     --color-text-on-dark: #ffffff;
     --color-border: #e0e0e0;
-    --font-heading: 'Inter', 'Segoe UI', sans-serif;
-    --font-body: 'Inter', 'Segoe UI', sans-serif;
+    --font-heading: 'Geologica', 'Segoe UI', sans-serif;
+    --font-body: 'Montserrat', 'Segoe UI', sans-serif;
     --font-size-h1: clamp(2rem, 4vw, 3rem);
     --font-size-h2: clamp(1.5rem, 3vw, 2.25rem);
     --font-size-h3: clamp(1.25rem, 2.5vw, 1.75rem);
     --font-size-body: 1rem;
     --section-padding: clamp(3rem, 6vw, 5rem);
     --container-max: 1200px;
-    --card-radius: 8px;
-    --btn-radius: 6px;
+    --card-radius: 20px;
+    --btn-radius: 8px;
     --shadow-card: 0 4px 6px rgba(0,0,0,0.07);
     --shadow-hover: 0 8px 25px rgba(0,0,0,0.12);
   }
@@ -42,21 +42,110 @@
   img { max-width:100%; height:auto; }
   a { transition:color 0.2s; }
 
-  /* Responsive */
+  /* Responsive: Tablet */
+  @media (max-width: 1024px) {
+    :root { --section-padding: clamp(2.5rem, 5vw, 4rem); }
+  }
+
+  /* Hamburger button (hidden on desktop) */
+  .hamburger-btn{display:none;background:none;border:none;cursor:pointer;padding:8px;z-index:1002;}
+  .hamburger-btn span{display:block;width:26px;height:3px;margin:5px 0;background:#1B2A4A;border-radius:2px;transition:all .3s ease;}
+  .hamburger-btn.open span:nth-child(1){transform:rotate(45deg) translate(6px,6px);}
+  .hamburger-btn.open span:nth-child(2){opacity:0;}
+  .hamburger-btn.open span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px);}
+
+  /* Mobile menu (hidden on desktop) */
+  .mobile-menu{display:none;background:#fff;padding:20px;border-top:1px solid #eee;}
+  .mobile-menu a{display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;}
+  .mobile-phone-cta{display:block;text-align:center;background:#F2C94C;color:#fff!important;padding:14px;border-radius:var(--btn-radius);margin-top:12px;text-decoration:none;font-weight:700;border-bottom:none!important;}
+
+  /* Responsive: Mobile */
   @media (max-width: 768px) {
+    :root {
+      --font-size-h1: clamp(1.75rem, 5vw, 2.5rem);
+      --font-size-h2: clamp(1.35rem, 4vw, 1.75rem);
+      --font-size-h3: clamp(1.1rem, 3vw, 1.35rem);
+      --section-padding: clamp(2rem, 5vw, 3rem);
+    }
     .desktop-nav { display:none !important; }
     .hamburger-btn { display:block !important; }
     .mobile-menu.open { display:block !important; }
+    .trust-metrics-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
+    .hero-section { min-height: auto !important; }
+    .hero-inner { padding: 40px 16px !important; }
+    .hero-stats-card { display: none !important; }
+    .hero-buttons a { padding: 14px 24px !important; font-size: 16px !important; }
+    .services-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
+    .content-grid { grid-template-columns: 1fr !important; }
     section [style*="grid-template-columns: repeat(4"] { grid-template-columns: repeat(2, 1fr) !important; }
     section [style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
     section [style*="display:flex;gap:32px"] { flex-direction: column !important; }
     section [style*="flex:0 0 300px"] { flex: 1 1 100% !important; }
+    section [style*="grid-template-columns:repeat(auto-fit, minmax(2"] { grid-template-columns: 1fr !important; }
+    section [style*="grid-template-columns:repeat(auto-fit, minmax(3"] { grid-template-columns: 1fr !important; }
+    img[style*="height:300px"] { height: 200px !important; }
+    img[style*="height:400px"] { height: 250px !important; }
+    img[style*="height:280px"] { height: 200px !important; }
+    iframe[style*="height:400"] { height: 250px !important; }
+    a[style*="padding:16px 36px"] { padding: 14px 24px !important; font-size: 16px !important; }
+    a[style*="padding:16px 32px"] { padding: 14px 24px !important; font-size: 16px !important; }
+    section[style*="padding:60px"] { padding: 40px 0 !important; }
+  }
+
+  /* Responsive: Small Phone */
+  @media (max-width: 480px) {
+    :root {
+      --font-size-h1: clamp(1.5rem, 6vw, 2rem);
+      --font-size-h2: clamp(1.2rem, 5vw, 1.5rem);
+      --font-size-h3: clamp(1rem, 4vw, 1.25rem);
+    }
+    .trust-metrics-grid { grid-template-columns: 1fr 1fr !important; gap: 8px !important; padding: 16px !important; }
+    .trust-metrics-grid > div { font-size: 12px !important; }
+    .trust-metrics-grid > div > div:first-child { font-size: 22px !important; }
+    .hero-buttons { flex-direction: column !important; }
+    .hero-buttons a { width: 100% !important; text-align: center !important; justify-content: center !important; }
+    header > div { height: 56px !important; }
+    header a[style*="font-size:22px"] { font-size: 18px !important; }
   }
 
   /* FAQ */
   .faq-item.open .faq-answer { max-height: 500px !important; }
+
+  
+
+  
+
+  
   </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Water Damage Repair Company of Luke Air Force Base","hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"BBB Accredited Business","description":"BBB Accredited Business A+ Rating"},{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"Licensed & Insured","description":"Licensed and Insured"}]}</script><link rel="canonical" href="https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Water Damage Repair Company of Luke Air Force Base","hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"BBB Accredited Business","description":"BBB Accredited Business A+ Rating"},{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"Licensed & Insured","description":"Licensed and Insured"}]}</script>
+<!-- 78vc0 -->
+
+<style>
+/* Trust Signal Styles */
+.ts-78v-reviews,.ts-78v-badges,.ts-78v-counter{transition:max-height .4s ease,opacity .3s ease,padding .3s ease}
+.ts-78v-reviews{max-height:600px;opacity:1;overflow:hidden;padding:24px 0}
+.ts-78v-review-card{background:#f8f9fa;border-radius:8px;padding:16px;margin:0 0 12px;border-left:3px solid #f4b400}
+.ts-78v-review-card .ts-78v-stars{color:#f4b400;font-size:16px;letter-spacing:1px}
+.ts-78v-review-card .ts-78v-author{font-weight:600;margin:6px 0 2px;font-size:14px;color:#333}
+.ts-78v-review-card .ts-78v-date{font-size:12px;color:#888;margin-bottom:6px}
+.ts-78v-review-card .ts-78v-text{font-size:14px;line-height:1.5;color:#444}
+.ts-78v-compact{display:none;padding:8px 16px;font-size:14px;color:#555;text-align:center}
+.ts-78v-compact .ts-78v-stars-sm{color:#f4b400;font-size:14px}
+.ts-78v-badges{max-height:120px;opacity:1;overflow:hidden;padding:16px 0;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:center}
+.ts-78v-badges img,.ts-78v-badges svg{height:48px;width:auto;opacity:.85;transition:opacity .2s}
+.ts-78v-badge-strip{display:none;padding:4px 0;gap:8px;align-items:center;justify-content:center}
+.ts-78v-badge-strip img,.ts-78v-badge-strip svg{height:24px;width:auto;opacity:.6}
+.ts-78v-counter{max-height:60px;opacity:1;padding:12px 0;font-size:15px;font-weight:600;color:#333;text-align:center}
+.ts-78v-counter-inline{display:none;font-size:13px;color:#666;font-weight:normal}
+body.ua-78v .ts-78v-reviews{max-height:0;opacity:0;padding:0;pointer-events:none}
+body.ua-78v .ts-78v-compact{display:block}
+body.ua-78v .ts-78v-badges{max-height:0;opacity:0;padding:0;pointer-events:none}
+body.ua-78v .ts-78v-badge-strip{display:flex}
+body.ua-78v .ts-78v-counter{max-height:0;opacity:0;padding:0;pointer-events:none}
+body.ua-78v .ts-78v-counter-inline{display:inline}
+</style>
+<!-- 78vc1 -->
+<link rel="canonical" href="https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services.html">
 <meta property="og:title" content="luke air force base az | Water Damage Repair Company of Luke Air Force Base">
 <meta property="og:description" content="luke air force base az services by Water Damage Repair Company of Luke Air Force Base in Luke Air Force Base, AZ. Quality water damage work, free estimates.">
 <meta property="og:type" content="website">
@@ -65,179 +154,206 @@
 <meta name="twitter:title" content="luke air force base az | Water Damage Repair Company of Luke Air Force Base">
 <meta name="twitter:description" content="luke air force base az services by Water Damage Repair Company of Luke Air Force Base in Luke Air Force Base, AZ. Quality water damage work, free estimates.">
 <!-- sd-graph-s -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/#webpage","url":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/","name":"Our Services","isPartOf":{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/#website"},"hasPart":[{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/water-damage-restoration/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/flood-cleanup/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/mold-remediation/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/fire-damage-restoration/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/storm-damage-repair/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/sewage-cleanup/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/structural-drying/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/content-restoration/#service"}]},{"@type":"BreadcrumbList","@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/#webpage","url":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/","name":"Our Water Damage Services","isPartOf":{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/#website"},"hasPart":[{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/water-damage-restoration/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/flood-cleanup/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/mold-remediation/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/fire-damage-restoration/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/storm-damage-repair/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/sewage-cleanup/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/structural-drying/#service"},{"@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/content-restoration/#service"}]},{"@type":"BreadcrumbList","@id":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services/"}]}]}</script>
 <!-- sd-graph-e -->
-<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/favicon.svg"><!-- 8utc0 -->
-
-<style>
-/* Trust Signal Styles */
-.ts-8ut-reviews,.ts-8ut-badges,.ts-8ut-counter{transition:max-height .4s ease,opacity .3s ease,padding .3s ease}
-.ts-8ut-reviews{max-height:600px;opacity:1;overflow:hidden;padding:24px 0}
-.ts-8ut-review-card{background:#f8f9fa;border-radius:8px;padding:16px;margin:0 0 12px;border-left:3px solid #f4b400}
-.ts-8ut-review-card .ts-8ut-stars{color:#f4b400;font-size:16px;letter-spacing:1px}
-.ts-8ut-review-card .ts-8ut-author{font-weight:600;margin:6px 0 2px;font-size:14px;color:#333}
-.ts-8ut-review-card .ts-8ut-date{font-size:12px;color:#888;margin-bottom:6px}
-.ts-8ut-review-card .ts-8ut-text{font-size:14px;line-height:1.5;color:#444}
-.ts-8ut-compact{display:none;padding:8px 16px;font-size:14px;color:#555;text-align:center}
-.ts-8ut-compact .ts-8ut-stars-sm{color:#f4b400;font-size:14px}
-.ts-8ut-badges{max-height:120px;opacity:1;overflow:hidden;padding:16px 0;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:center}
-.ts-8ut-badges img,.ts-8ut-badges svg{height:48px;width:auto;opacity:.85;transition:opacity .2s}
-.ts-8ut-badge-strip{display:none;padding:4px 0;gap:8px;align-items:center;justify-content:center}
-.ts-8ut-badge-strip img,.ts-8ut-badge-strip svg{height:24px;width:auto;opacity:.6}
-.ts-8ut-counter{max-height:60px;opacity:1;padding:12px 0;font-size:15px;font-weight:600;color:#333;text-align:center}
-.ts-8ut-counter-inline{display:none;font-size:13px;color:#666;font-weight:normal}
-body.ua-8ut .ts-8ut-reviews{max-height:0;opacity:0;padding:0;pointer-events:none}
-body.ua-8ut .ts-8ut-compact{display:block}
-body.ua-8ut .ts-8ut-badges{max-height:0;opacity:0;padding:0;pointer-events:none}
-body.ua-8ut .ts-8ut-badge-strip{display:flex}
-body.ua-8ut .ts-8ut-counter{max-height:0;opacity:0;padding:0;pointer-events:none}
-body.ua-8ut .ts-8ut-counter-inline{display:inline}
-</style>
-<!-- 8utc1 -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/favicon.svg">
 </head>
 <body>
   
-  <!-- Emergency Bar -->
-  <div style="background:#0F2E52;color:#fff;padding:8px 0;text-align:center;font-size:14px;font-weight:600;letter-spacing:0.5px;">
-    <div style="max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;">
-      <span style="display:inline-flex;align-items:center;gap:6px;">
-        <svg width="16" height="16" fill="none" stroke="#E8751A" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        24/7 EMERGENCY RESPONSE
-      </span>
-      <a href="tel:8008196517" style="color:#E8751A;text-decoration:none;font-weight:700;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
+  <!-- Top Bar: Announcement -->
+  <div style="background:#F2C94C;color:#0F1B33;padding:10px 0;text-align:center;font-size:14px;font-weight:700;">
+    <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
+      24/7 EMERGENCY RESPONSE — Call <a href="tel:8008196517" style="color:#0F1B33;text-decoration:underline;font-weight:800;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
     </div>
   </div>
   
-  <!-- Header -->
-  <header style="background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000;" role="banner">
+  <!-- Header: navy-solid -->
+  <style>.nav-dropdown:hover .nav-dropdown-menu{display:block!important;}</style>
+  <header style="background:#1B2A4A;box-shadow:0 2px 10px rgba(0,0,0,0.2);position:sticky;top:0;z-index:1000;" role="banner">
     <div style="max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:72px;">
-      <a href="./" style="font-family:var(--font-heading);font-size:22px;font-weight:800;color:#1B4E8A;text-decoration:none;">Water Damage Repair Company of Luke Air Force Base</a>
+      <a href="./" style="font-family:var(--font-heading);font-size:22px;font-weight:800;color:#fff;text-decoration:none;">Water Damage Repair Company of Luke Air Force Base</a>
       <nav class="desktop-nav" style="display:flex;align-items:center;gap:24px;" role="navigation" aria-label="Main navigation">
-        <a href="./" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Home</a>
-        <a href="./services.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Services</a>
-        <a href="./about.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">About</a>
-        <a href="./locations.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Service Areas</a>
-        <a href="./reviews.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Reviews</a>
-        <a href="./contact.html" style="color:#374151;text-decoration:none;font-size:15px;font-weight:500;">Contact</a>
-        <a href="tel:8008196517" style="background:#E8751A;color:#fff;padding:10px 20px;border-radius:var(--btn-radius);text-decoration:none;font-weight:700;font-size:15px;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
+        <a href="./" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;">Home</a>
+        <div class="nav-dropdown" style="position:relative;">
+          <a href="./services" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;display:inline-flex;align-items:center;gap:4px;">Services <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="nav-dropdown-menu" style="display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#0F1B33;box-shadow:0 8px 24px rgba(0,0,0,0.12);border-radius:8px;padding:8px 0;min-width:220px;z-index:1001;">
+            <a href="./services" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">All Services</a>
+            <a href="./water-damage-restoration" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Water Damage Restoration</a>
+            <a href="./flood-cleanup" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Flood Cleanup</a>
+            <a href="./mold-remediation" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Mold Remediation</a>
+            <a href="./fire-damage-restoration" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Fire Damage Restoration</a>
+            <a href="./storm-damage-repair" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Storm Damage Repair</a>
+            <a href="./sewage-cleanup" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Sewage Cleanup</a>
+            <a href="./structural-drying" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Structural Drying</a>
+            <a href="./content-restoration" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Content Restoration</a>
+          </div>
+        </div>
+        <a href="./about" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;">About</a>
+        <div class="nav-dropdown" style="position:relative;">
+          <a href="./locations" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;display:inline-flex;align-items:center;gap:4px;">Locations <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="nav-dropdown-menu" style="display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#0F1B33;box-shadow:0 8px 24px rgba(0,0,0,0.12);border-radius:8px;padding:8px 0;min-width:220px;z-index:1001;">
+            <a href="./locations" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">All Locations</a>
+            <a href="./phoenix-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Phoenix, AZ</a>
+            <a href="./queen-creek-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Queen Creek, AZ</a>
+            <a href="./mesa-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Mesa, AZ</a>
+            <a href="./chandler-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Chandler, AZ</a>
+            <a href="./gilbert-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Gilbert, AZ</a>
+            <a href="./scottsdale-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Scottsdale, AZ</a>
+            <a href="./paradise-valley-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Paradise Valley, AZ</a>
+            <a href="./rio-verde-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Rio Verde, AZ</a>
+            <a href="./fort-mcdowell-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Fort Mcdowell, AZ</a>
+            <a href="./fountain-hills-az" style="display:block;padding:10px 20px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;white-space:nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background=''">Fountain Hills, AZ</a>
+          </div>
+        </div>
+        <a href="./reviews" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;">Reviews</a>
+        <a href="./contact" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:15px;font-weight:500;">Contact</a>
+        
+        <a href="tel:8008196517" style="background:#F2C94C;color:#fff;padding:10px 20px;border-radius:var(--btn-radius);text-decoration:none;font-weight:700;font-size:15px;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
       </nav>
-      <button class="hamburger-btn" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="display:none;background:none;border:none;cursor:pointer;padding:8px;" aria-label="Menu">
-        <svg width="28" height="28" fill="none" stroke="#1B4E8A" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <button class="hamburger-btn" aria-label="Menu" aria-expanded="false" style="display:none;background:none;border:none;cursor:pointer;padding:8px;">
+        <span style="display:block;width:26px;height:3px;margin:5px 0;background:#fff;border-radius:2px;"></span>
+        <span style="display:block;width:26px;height:3px;margin:5px 0;background:#fff;border-radius:2px;"></span>
+        <span style="display:block;width:26px;height:3px;margin:5px 0;background:#fff;border-radius:2px;"></span>
       </button>
     </div>
-    <div id="mobile-menu" class="mobile-menu" style="display:none;background:#fff;padding:16px 20px;border-top:1px solid #eee;">
-      <a href="./" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Home</a>
-      <a href="./services.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Services</a>
-      <a href="./about.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">About</a>
-      <a href="./locations.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Service Areas</a>
-      <a href="./reviews.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Reviews</a>
-      <a href="./contact.html" style="display:block;padding:12px 0;color:#374151;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Contact</a>
-      <a href="tel:8008196517" style="display:block;text-align:center;background:#E8751A;color:#fff;padding:14px;border-radius:var(--btn-radius);margin-top:12px;text-decoration:none;font-weight:700;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="./" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Home</a>
+      <a href="./services" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;font-weight:600;border-bottom:1px solid #f0f0f0;">Services</a>
+      <a href="./services" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">All Services</a>
+      <a href="./water-damage-restoration" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Water Damage Restoration</a>
+      <a href="./flood-cleanup" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Flood Cleanup</a>
+      <a href="./mold-remediation" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Mold Remediation</a>
+      <a href="./fire-damage-restoration" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Fire Damage Restoration</a>
+      <a href="./storm-damage-repair" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Storm Damage Repair</a>
+      <a href="./sewage-cleanup" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Sewage Cleanup</a>
+      <a href="./structural-drying" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Structural Drying</a>
+      <a href="./content-restoration" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Content Restoration</a>
+      <a href="./about" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">About</a>
+      <a href="./locations" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;font-weight:600;border-bottom:1px solid #f0f0f0;">Locations</a>
+      <a href="./locations" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">All Locations</a>
+      <a href="./phoenix-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Phoenix, AZ</a>
+      <a href="./queen-creek-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Queen Creek, AZ</a>
+      <a href="./mesa-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Mesa, AZ</a>
+      <a href="./chandler-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Chandler, AZ</a>
+      <a href="./gilbert-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Gilbert, AZ</a>
+      <a href="./scottsdale-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Scottsdale, AZ</a>
+      <a href="./paradise-valley-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Paradise Valley, AZ</a>
+      <a href="./rio-verde-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Rio Verde, AZ</a>
+      <a href="./fort-mcdowell-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Fort Mcdowell, AZ</a>
+      <a href="./fountain-hills-az" style="display:block;padding:8px 0 8px 16px;color:#333333;text-decoration:none;font-size:14px;border-bottom:1px solid #f8f8f8;">Fountain Hills, AZ</a>
+      <a href="./reviews" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Reviews</a>
+      <a href="./contact" style="display:block;padding:12px 0;color:#333333;text-decoration:none;font-size:16px;border-bottom:1px solid #f0f0f0;">Contact</a>
+      <a href="tel:8008196517" class="mobile-phone-cta" aria-label="Call (800) 819-6517">(800) 819-6517</a>
     </div>
   </header>
   <!-- Page Banner -->
-  <section style="background:linear-gradient(135deg, #1B4E8A, #0F2E52);padding:60px 0;text-align:center;">
-    <h1 style="font-family:var(--font-heading);font-size:clamp(1.8rem, 4vw, 2.5rem);font-weight:800;color:#fff;">Our Services</h1>
+  <section style="background:linear-gradient(135deg, #1B2A4A, #0F1B33);padding:60px 0;text-align:center;">
+    <h1 style="font-family:var(--font-heading);font-size:clamp(1.8rem, 4vw, 2.5rem);font-weight:800;color:#fff;">Our Water Damage Services</h1>
     <p style="color:rgba(255,255,255,0.8);margin-top:12px;font-size:16px;">Water Damage Repair Company of Luke Air Force Base | Luke Air Force Base, AZ</p>
   </section>
-<!-- 8uth0 -->
+<!-- 78vh0 -->
 
-  <div class="ts-8ut-compact" aria-label="Rating Summary" style="display:block">
-    <span class="ts-8ut-stars-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 &middot; 200 reviews
+  <div class="ts-78v-compact" aria-label="Rating Summary" style="display:block">
+    <span class="ts-78v-stars-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 &middot; 200 reviews
   </div>
-  <div class="ts-8ut-badge-strip" aria-label="Certifications" style="display:flex">
+  <div class="ts-78v-badge-strip" aria-label="Certifications" style="display:flex">
     <span style="font-size:11px;color:#666">&#10003; IICRC Certified</span> <span style="font-size:11px;color:#666">&#10003; BBB A+</span> <span style="font-size:11px;color:#666">&#10003; 24/7 Emergency</span>
   </div>
-<!-- 8uth1 -->  <main role="main">
+<!-- 78vh1 -->
+  <main role="main">
     
     <section style="padding:var(--section-padding) 0;background:#fff;">
       <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
-        <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1F2937;text-align:center;margin-bottom:48px;">Our Water Damage Services</h2>
-        <div style="display:flex;gap:32px;align-items:center;margin-bottom:48px;flex-wrap:wrap;background:#fff;padding:32px;border-radius:var(--card-radius);">
-          <img src="images/svc-water-damage.jpeg" alt="water damage restoration service" style="flex:0 0 100px;height:100px;border-radius:var(--card-radius);object-fit:cover;border:2px solid #1B4E8A20;" loading="lazy">
-          <div style="flex:1;min-width:280px;">
-            <h3 style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:#1F2937;margin-bottom:12px;">Water Damage Restoration</h3>
-            <p style="color:#374151;font-size:15px;line-height:1.7;margin-bottom:16px;">Complete water extraction, structural drying, and rebuilding. IICRC-certified technicians with industrial equipment restore your property to pre-loss condition.</p>
-            <a href="tel:8008196517" style="display:inline-block;background:#E8751A;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+        <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#1B2A4A;text-align:center;margin-bottom:12px;">Our Water Damage Services</h2>
+        <p style="text-align:center;color:#333333;max-width:700px;margin:0 auto 48px;font-size:16px;line-height:1.6;">Full-service water damage restoration for Luke Air Force Base homes and businesses. Every service listed below is done by our own crews, not subcontractors.</p>
+        <div style="display:grid;grid-template-columns:repeat(2, 1fr);gap:28px;">
+          <div style="background:#fff;border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <img fetchpriority="high" src="images/service-restoration-service-restoration-waterdamagerestorati.webp" style="width:100%;height:200px;object-fit:cover;" loading="lazy" alt="ffffff?text=Water+Damage+Restoration+detail">
+            <div style="padding:24px;">
+              <h3 style="font-family:var(--font-heading);font-size:20px;font-weight:700;color:#1B2A4A;margin-bottom:10px;">Water Damage Restoration</h3>
+              <p style="color:#333333;font-size:14px;line-height:1.7;margin-bottom:16px;">This is our core service and the one we get the most calls for in Luke Air Force Base. Water damage restoration covers the full scope — water extraction, structural drying, dehumidification, antimicrobial treatment, and monitoring. We bring truck-mounted extractors that can pull water out of a flooded house faster than most companies can get their van loaded. Once extraction is done, we set up a calculated drying plan based on square footage, material types, and current humidity levels. Daily moisture checks with pin meters and thermal imaging ensure we're hitting our targets. Most residential drying jobs take 3-5 days in Arizona's climate.</p>
+              <a href="tel:8008196517" style="display:inline-block;background:#F2C94C;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;font-size:14px;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+            </div>
           </div>
-        </div>
-        <div style="display:flex;gap:32px;align-items:center;margin-bottom:48px;flex-wrap:wrap;background:#F5F7FA;padding:32px;border-radius:var(--card-radius);">
-          <img src="images/svc-flood.png" alt="flood cleanup service" style="flex:0 0 100px;height:100px;border-radius:var(--card-radius);object-fit:cover;border:2px solid #1B4E8A20;" loading="lazy">
-          <div style="flex:1;min-width:280px;">
-            <h3 style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:#1F2937;margin-bottom:12px;">Flood Cleanup</h3>
-            <p style="color:#374151;font-size:15px;line-height:1.7;margin-bottom:16px;">Fast flood response with commercial-grade pumps and dehumidifiers. We remove standing water, sanitize affected areas, and prevent secondary damage.</p>
-            <a href="tel:8008196517" style="display:inline-block;background:#E8751A;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+          <div style="background:#fff;border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <img fetchpriority="high" src="images/service-extraction-service-extraction-waterdamageextraction.webp" style="width:100%;height:200px;object-fit:cover;" loading="lazy" alt="ffffff?text=Flood+Cleanup+detail">
+            <div style="padding:24px;">
+              <h3 style="font-family:var(--font-heading);font-size:20px;font-weight:700;color:#1B2A4A;margin-bottom:10px;">Flood Cleanup</h3>
+              <p style="color:#333333;font-size:14px;line-height:1.7;margin-bottom:16px;">Flood damage is urgent because floodwater isn't just water — it carries sewage, chemicals, soil, and bacteria. Our Luke Air Force Base flood cleanup starts with rapid extraction using commercial pumps, followed by removal of contaminated materials (carpet pad, lower drywall, insulation). Then antimicrobial treatment, structural drying, and air quality verification. We document everything for FEMA claims when applicable.</p>
+              <a href="tel:8008196517" style="display:inline-block;background:#F2C94C;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;font-size:14px;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+            </div>
           </div>
-        </div>
-        <div style="display:flex;gap:32px;align-items:center;margin-bottom:48px;flex-wrap:wrap;background:#fff;padding:32px;border-radius:var(--card-radius);">
-          <img src="images/svc-mold.jpeg" alt="mold remediation inspection" style="flex:0 0 100px;height:100px;border-radius:var(--card-radius);object-fit:cover;border:2px solid #1B4E8A20;" loading="lazy">
-          <div style="flex:1;min-width:280px;">
-            <h3 style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:#1F2937;margin-bottom:12px;">Mold Remediation</h3>
-            <p style="color:#374151;font-size:15px;line-height:1.7;margin-bottom:16px;">Certified mold assessment, containment, and removal. We identify moisture sources, treat affected surfaces, and verify air quality post-remediation.</p>
-            <a href="tel:8008196517" style="display:inline-block;background:#E8751A;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+          <div style="background:#fff;border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <img decoding="async" src="images/service-mold-service-mold-moldremediationremovalprote.webp" style="width:100%;height:200px;object-fit:cover;" loading="lazy" alt="ffffff?text=Mold+Remediation+detail">
+            <div style="padding:24px;">
+              <h3 style="font-family:var(--font-heading);font-size:20px;font-weight:700;color:#1B2A4A;margin-bottom:10px;">Mold Remediation</h3>
+              <p style="color:#333333;font-size:14px;line-height:1.7;margin-bottom:16px;">Mold is almost guaranteed in Arizona when water damage goes untreated for more than 48 hours — the heat and humidity create perfect conditions. Our mold remediation follows IICRC S520 standards: containment with negative air pressure, removal of affected materials in sealed bags, HEPA air filtration throughout, antimicrobial treatment of remaining structures, and post-remediation air testing by a third-party lab. We don't do mold testing and mold removal — that's a conflict of interest. We recommend an independent hygienist for pre-testing.</p>
+              <a href="tel:8008196517" style="display:inline-block;background:#F2C94C;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;font-size:14px;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+            </div>
           </div>
-        </div>
-        <div style="display:flex;gap:32px;align-items:center;margin-bottom:48px;flex-wrap:wrap;background:#F5F7FA;padding:32px;border-radius:var(--card-radius);">
-          <img src="images/svc-fire.jpeg" alt="fire damage restoration" style="flex:0 0 100px;height:100px;border-radius:var(--card-radius);object-fit:cover;border:2px solid #1B4E8A20;" loading="lazy">
-          <div style="flex:1;min-width:280px;">
-            <h3 style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:#1F2937;margin-bottom:12px;">Fire Damage Restoration</h3>
-            <p style="color:#374151;font-size:15px;line-height:1.7;margin-bottom:16px;">Comprehensive fire and smoke damage cleanup including soot removal, odor elimination, structural repair, and content restoration.</p>
-            <a href="tel:8008196517" style="display:inline-block;background:#E8751A;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+          <div style="background:#fff;border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <img decoding="async" src="images/service-restoration-service-restoration-waterdamagerestorati.webp" style="width:100%;height:200px;object-fit:cover;" loading="lazy" alt="ffffff?text=Fire+Damage+Restoration+detail">
+            <div style="padding:24px;">
+              <h3 style="font-family:var(--font-heading);font-size:20px;font-weight:700;color:#1B2A4A;margin-bottom:10px;">Fire Damage Restoration</h3>
+              <p style="color:#333333;font-size:14px;line-height:1.7;margin-bottom:16px;">Fire damage jobs in Luke Air Force Base are always two problems at once — the fire damage itself (soot, smoke, structural charring) and the water damage from firefighting efforts. Our team handles both. We start with board-up and emergency stabilization, then move into soot and smoke cleaning, odor elimination (we use hydroxyl generators — they work better than ozone in occupied spaces), and water extraction from fire hoses. Then structural repairs and rebuild.</p>
+              <a href="tel:8008196517" style="display:inline-block;background:#F2C94C;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;font-size:14px;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+            </div>
           </div>
-        </div>
-        <div style="display:flex;gap:32px;align-items:center;margin-bottom:48px;flex-wrap:wrap;background:#fff;padding:32px;border-radius:var(--card-radius);">
-          <img src="images/svc-storm.jpeg" alt="storm damage repair" style="flex:0 0 100px;height:100px;border-radius:var(--card-radius);object-fit:cover;border:2px solid #1B4E8A20;" loading="lazy">
-          <div style="flex:1;min-width:280px;">
-            <h3 style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:#1F2937;margin-bottom:12px;">Storm Damage Repair</h3>
-            <p style="color:#374151;font-size:15px;line-height:1.7;margin-bottom:16px;">Emergency board-up, tarping, and full restoration after storms, hurricanes, and severe weather. We work directly with your insurance company.</p>
-            <a href="tel:8008196517" style="display:inline-block;background:#E8751A;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+          <div style="background:#fff;border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <img decoding="async" src="images/service-repair-detail-service-repair-detail-professionalwaterd.webp" style="width:100%;height:200px;object-fit:cover;" loading="lazy" alt="ffffff?text=Storm+Damage+Repair+detail">
+            <div style="padding:24px;">
+              <h3 style="font-family:var(--font-heading);font-size:20px;font-weight:700;color:#1B2A4A;margin-bottom:10px;">Storm Damage Repair</h3>
+              <p style="color:#333333;font-size:14px;line-height:1.7;margin-bottom:16px;">Arizona gets its share of severe weather — dust storms, monsoon downpours, and occasional hail. Our storm damage response in Luke Air Force Base starts with emergency tarping and board-up to prevent further damage. Then we assess, document, and begin mitigation. We photograph everything for insurance before we touch it, and we work with your carrier to get the claim moving fast. Roof damage, broken windows, flooding — we handle all of it.</p>
+              <a href="tel:8008196517" style="display:inline-block;background:#F2C94C;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;font-size:14px;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+            </div>
           </div>
-        </div>
-        <div style="display:flex;gap:32px;align-items:center;margin-bottom:48px;flex-wrap:wrap;background:#F5F7FA;padding:32px;border-radius:var(--card-radius);">
-          <img src="images/svc-sewage.jpeg" alt="sewage cleanup service" style="flex:0 0 100px;height:100px;border-radius:var(--card-radius);object-fit:cover;border:2px solid #1B4E8A20;" loading="lazy">
-          <div style="flex:1;min-width:280px;">
-            <h3 style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:#1F2937;margin-bottom:12px;">Sewage Cleanup</h3>
-            <p style="color:#374151;font-size:15px;line-height:1.7;margin-bottom:16px;">Hazardous Category 3 water extraction with full sanitization. EPA-compliant disposal of contaminated materials and antimicrobial treatment.</p>
-            <a href="tel:8008196517" style="display:inline-block;background:#E8751A;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+          <div style="background:#fff;border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <img decoding="async" src="images/default-detail-default-detail-waterdamageprofessionalse.webp" style="width:100%;height:200px;object-fit:cover;" loading="lazy" alt="ffffff?text=Sewage+Cleanup+detail">
+            <div style="padding:24px;">
+              <h3 style="font-family:var(--font-heading);font-size:20px;font-weight:700;color:#1B2A4A;margin-bottom:10px;">Sewage Cleanup</h3>
+              <p style="color:#333333;font-size:14px;line-height:1.7;margin-bottom:16px;">Nobody wants to deal with sewage — and you shouldn't have to. Our Luke Air Force Base hazmat-trained crew handles extraction, contaminated material removal, antimicrobial treatment, and disposal. We use Bio-Cide and Concrobium at professional concentrations — the stuff from Home Depot doesn't cut it for Category 3 water. Full PPE, proper disposal, and we don't leave until the area is safe.</p>
+              <a href="tel:8008196517" style="display:inline-block;background:#F2C94C;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;font-size:14px;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+            </div>
           </div>
-        </div>
-        <div style="display:flex;gap:32px;align-items:center;margin-bottom:48px;flex-wrap:wrap;background:#fff;padding:32px;border-radius:var(--card-radius);">
-          <img src="images/svc-drying.jpeg" alt="structural drying equipment" style="flex:0 0 100px;height:100px;border-radius:var(--card-radius);object-fit:cover;border:2px solid #1B4E8A20;" loading="lazy">
-          <div style="flex:1;min-width:280px;">
-            <h3 style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:#1F2937;margin-bottom:12px;">Structural Drying</h3>
-            <p style="color:#374151;font-size:15px;line-height:1.7;margin-bottom:16px;">Industrial air movers, dehumidifiers, and moisture monitoring systems. We dry walls, floors, and ceilings to prevent warping and mold growth.</p>
-            <a href="tel:8008196517" style="display:inline-block;background:#E8751A;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+          <div style="background:#fff;border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <img decoding="async" src="images/service-drying-service-drying-waterdamagedryingdehumidi.webp" style="width:100%;height:200px;object-fit:cover;" loading="lazy" alt="ffffff?text=Structural+Drying+detail">
+            <div style="padding:24px;">
+              <h3 style="font-family:var(--font-heading);font-size:20px;font-weight:700;color:#1B2A4A;margin-bottom:10px;">Structural Drying</h3>
+              <p style="color:#333333;font-size:14px;line-height:1.7;margin-bottom:16px;">We're drying nerds. Seriously. Our techs calculate the exact equipment load using psychrometric charts — how many air movers, what type of dehumidifiers, where to place them for maximum efficiency. In Luke Air Force Base's climate, getting the right dehumidifier type matters (LGR units perform better in our humidity range). We take daily moisture readings with pin meters, pinless meters, and thermal hygrometers, and we adjust equipment as the drying progresses. You get a detailed drying log at the end.</p>
+              <a href="tel:8008196517" style="display:inline-block;background:#F2C94C;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;font-size:14px;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+            </div>
           </div>
-        </div>
-        <div style="display:flex;gap:32px;align-items:center;margin-bottom:48px;flex-wrap:wrap;background:#F5F7FA;padding:32px;border-radius:var(--card-radius);">
-          <img src="images/svc-content.jpeg" alt="content restoration service" style="flex:0 0 100px;height:100px;border-radius:var(--card-radius);object-fit:cover;border:2px solid #1B4E8A20;" loading="lazy">
-          <div style="flex:1;min-width:280px;">
-            <h3 style="font-family:var(--font-heading);font-size:22px;font-weight:700;color:#1F2937;margin-bottom:12px;">Content Restoration</h3>
-            <p style="color:#374151;font-size:15px;line-height:1.7;margin-bottom:16px;">Specialized cleaning and restoration of personal belongings, furniture, electronics, and documents damaged by water, fire, or mold.</p>
-            <a href="tel:8008196517" style="display:inline-block;background:#E8751A;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+          <div style="background:#fff;border:1px solid #e5e7eb;border-radius:var(--card-radius);overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-hover)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <img decoding="async" src="images/service-restoration-service-restoration-waterdamagerestorati.webp" style="width:100%;height:200px;object-fit:cover;" loading="lazy" alt="ffffff?text=Content+Restoration+detail">
+            <div style="padding:24px;">
+              <h3 style="font-family:var(--font-heading);font-size:20px;font-weight:700;color:#1B2A4A;margin-bottom:10px;">Content Restoration</h3>
+              <p style="color:#333333;font-size:14px;line-height:1.7;margin-bottom:16px;">Water-damaged personal property often looks ruined but isn't. Our content restoration team in Luke Air Force Base packs out affected items with detailed inventory, transports them to our climate-controlled facility, and uses ultrasonic cleaning, freeze-drying (for documents and photos), and specialized techniques for electronics and fabrics. Your insurance gets a complete inventory with pre/post condition documentation.</p>
+              <a href="tel:8008196517" style="display:inline-block;background:#F2C94C;color:#fff;padding:10px 24px;border-radius:var(--btn-radius);font-weight:600;text-decoration:none;font-size:14px;" aria-label="Call (800) 819-6517">Get a Free Quote →</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Service","name":"Water Damage Restoration","provider":{"@type":"Organization","name":"Water Damage Repair Company of Luke Air Force Base"},"serviceType":"water damage","url":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services"}},{"@type":"ListItem","position":2,"item":{"@type":"Service","name":"Flood Cleanup","provider":{"@type":"Organization","name":"Water Damage Repair Company of Luke Air Force Base"},"serviceType":"water damage","url":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services"}},{"@type":"ListItem","position":3,"item":{"@type":"Service","name":"Mold Remediation","provider":{"@type":"Organization","name":"Water Damage Repair Company of Luke Air Force Base"},"serviceType":"water damage","url":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services"}},{"@type":"ListItem","position":4,"item":{"@type":"Service","name":"Fire Damage Restoration","provider":{"@type":"Organization","name":"Water Damage Repair Company of Luke Air Force Base"},"serviceType":"water damage","url":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services"}},{"@type":"ListItem","position":5,"item":{"@type":"Service","name":"Storm Damage Repair","provider":{"@type":"Organization","name":"Water Damage Repair Company of Luke Air Force Base"},"serviceType":"water damage","url":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services"}},{"@type":"ListItem","position":6,"item":{"@type":"Service","name":"Sewage Cleanup","provider":{"@type":"Organization","name":"Water Damage Repair Company of Luke Air Force Base"},"serviceType":"water damage","url":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services"}},{"@type":"ListItem","position":7,"item":{"@type":"Service","name":"Structural Drying","provider":{"@type":"Organization","name":"Water Damage Repair Company of Luke Air Force Base"},"serviceType":"water damage","url":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services"}},{"@type":"ListItem","position":8,"item":{"@type":"Service","name":"Content Restoration","provider":{"@type":"Organization","name":"Water Damage Repair Company of Luke Air Force Base"},"serviceType":"water damage","url":"https://luke-air-force-base-az.waterdamageremovalbrooklyn.com/services"}}]}</script>
   </main>
   
   <!-- Final CTA -->
-  <section id="contact" style="background:linear-gradient(135deg, #1B4E8A 0%, #0F2E52 100%);padding:var(--section-padding) 0;text-align:center;">
+  <section id="contact" style="background:linear-gradient(135deg, #1B2A4A 0%, #0F1B33 100%);padding:var(--section-padding) 0;text-align:center;">
     <div style="max-width:700px;margin:0 auto;padding:0 20px;">
-      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#fff;margin-bottom:16px;">Ready to Get Started?</h2>
-      <p style="color:rgba(255,255,255,0.85);font-size:18px;line-height:1.6;margin-bottom:32px;">Contact Water Damage Repair Company of Luke Air Force Base today for a free consultation. 15+ years of trusted water damage service in Luke Air Force Base.</p>
+      <h2 style="font-family:var(--font-heading);font-size:var(--font-size-h2);font-weight:700;color:#fff;margin-bottom:16px;">Water Damage in Luke Air Force Base? Call (800) 819-6517.</h2>
+      <p style="color:rgba(255,255,255,0.85);font-size:18px;line-height:1.6;margin-bottom:32px;">Call (800) 819-6517. Tell us what happened. We'll have a crew to you fast with everything needed to start restoration.</p>
       <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
-        <a href="tel:8008196517" style="background:#E8751A;color:#fff;padding:16px 36px;border-radius:var(--btn-radius);font-size:18px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;" aria-label="Call (800) 819-6517">
+        <a href="tel:8008196517" style="background:#F2C94C;color:#fff;padding:16px 36px;border-radius:var(--btn-radius);font-size:18px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;" aria-label="Call (800) 819-6517">
           <svg width="20" height="20" fill="#fff" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.01l-2.2 2.21z"/></svg>
           Call (800) 819-6517
         </a>
-        <a href="mailto:info@luke-air-force-base-az.waterdamageremovalbrooklyn.com" style="color:#fff;padding:16px 36px;border-radius:var(--btn-radius);font-size:16px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5);">Get Free Estimate</a>
+        <a href="#contact" style="color:#fff;padding:16px 36px;border-radius:var(--btn-radius);font-size:16px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5);">Get Free Estimate</a>
       </div>
     </div>
   </section>
   
   <!-- Footer -->
-  <footer style="background:#0F2E52;color:rgba(255,255,255,0.8);padding:48px 0 0;" role="contentinfo">
+  <footer style="background:#0F1B33;color:rgba(255,255,255,0.8);padding:48px 0 0;" role="contentinfo">
     <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:40px;margin-bottom:40px;">
         <!-- Company -->
@@ -249,26 +365,25 @@ body.ua-8ut .ts-8ut-counter-inline{display:inline}
         <div>
           <div style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#fff;margin-bottom:16px;">Quick Links</div>
           <a href="./" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Home</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Services</a>
-          <a href="./about.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">About</a>
-          <a href="./locations.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Service Areas</a>
-          <a href="./reviews.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Reviews</a>
-          <a href="./contact.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Contact</a>
+          <a href="./about" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">About</a>
+          <a href="./locations" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Locations</a>
+          <a href="./reviews" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Reviews</a>
+          <a href="./contact" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Contact</a>
         </div>
         <!-- Services -->
         <div>
           <div style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#fff;margin-bottom:16px;">Services</div>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Water Damage Restoration</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Flood Cleanup</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Mold Remediation</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Fire Damage Restoration</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Storm Damage Repair</a>
-          <a href="./services.html" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Sewage Cleanup</a>
+          <a href="./water-damage-restoration" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Water Damage Restoration</a>
+          <a href="./flood-cleanup" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Flood Cleanup</a>
+          <a href="./mold-remediation" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Mold Remediation</a>
+          <a href="./fire-damage-restoration" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Fire Damage Restoration</a>
+          <a href="./storm-damage-repair" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Storm Damage Repair</a>
+          <a href="./sewage-cleanup" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">Sewage Cleanup</a>
         </div>
         <!-- Contact -->
         <div>
           <div style="font-family:var(--font-heading);font-size:16px;font-weight:700;color:#fff;margin-bottom:16px;">Contact Us</div>
-          <a href="tel:8008196517" style="display:block;color:#E8751A;text-decoration:none;font-size:16px;font-weight:700;padding:4px 0;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
+          <a href="tel:8008196517" style="display:block;color:#F2C94C;text-decoration:none;font-size:16px;font-weight:700;padding:4px 0;" aria-label="Call (800) 819-6517">(800) 819-6517</a>
           <a href="mailto:info@luke-air-force-base-az.waterdamageremovalbrooklyn.com" style="display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;padding:4px 0;">info@luke-air-force-base-az.waterdamageremovalbrooklyn.com</a>
           
           <p style="font-size:14px;padding:4px 0;">Hours: 24/7 Emergency Service</p>
@@ -286,23 +401,104 @@ body.ua-8ut .ts-8ut-counter-inline{display:inline}
       <div style="border-top:1px solid rgba(255,255,255,0.1);padding:20px 0;text-align:center;font-size:13px;color:rgba(255,255,255,0.5);">
         © 2026 Water Damage Repair Company of Luke Air Force Base. All rights reserved.
         <span style="margin:0 8px;">|</span>
-        <a href="./privacy.html" style="color:rgba(255,255,255,0.5);text-decoration:none;">Privacy Policy</a>
+        <a href="./privacy" style="color:rgba(255,255,255,0.5);text-decoration:none;">Privacy Policy</a>
         <span style="margin:0 8px;">|</span>
-        <a href="./terms.html" style="color:rgba(255,255,255,0.5);text-decoration:none;">Terms of Service</a>
+        <a href="./terms" style="color:rgba(255,255,255,0.5);text-decoration:none;">Terms of Service</a>
       </div>
     </div>
   </footer>
   <script>
-  document.querySelectorAll('#mobile-menu a').forEach(function(a){
-    a.addEventListener('click',function(){document.getElementById('mobile-menu').classList.remove('open');});
-  });
+  (function(){
+    var btn=document.querySelector('.hamburger-btn');
+    var menu=document.getElementById('mobile-menu');
+    if(!btn||!menu)return;
+    btn.addEventListener('click',function(){
+      var open=menu.classList.toggle('open');
+      btn.classList.toggle('open',open);
+      btn.setAttribute('aria-expanded',open?'true':'false');
+      document.body.style.overflow=open?'hidden':'';
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        menu.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+        document.body.style.overflow='';
+      });
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'&&menu.classList.contains('open')){
+        menu.classList.remove('open');btn.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');document.body.style.overflow='';
+      }
+    });
+  })();
   </script>
   <script>
   document.querySelectorAll('.faq-item').forEach(function(item){
     item.querySelector('button').addEventListener('click',function(){});
   });
-  </script><!-- 8utj0 -->
-<script>(function(){var c='ua-8ut',e=['mousemove','scroll','touchstart','click','keydown'],b=document.body;function h(){b.classList.add(c);e.forEach(function(v){window.removeEventListener(v,h,{passive:true})});}e.forEach(function(v){window.addEventListener(v,h,{passive:true});});})();</script>
-<!-- 8utj1 -->
+  </script>
+<!-- 78vj0 -->
+<script>(function(){var c='ua-78v',e=['mousemove','scroll','touchstart','click','keydown'],b=document.body;function h(){b.classList.add(c);e.forEach(function(v){window.removeEventListener(v,h,{passive:true})});}e.forEach(function(v){window.addEventListener(v,h,{passive:true});});})();</script>
+<!-- 78vj1 -->
+<script>
+(function() {
+  var trackingNumber = '(800) 819-6517';
+  var websiteId = 'fran-1771836863030-f5p7hb';
+  
+  function replacePhoneNumbers() {
+    var phoneRegex = /[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}/g;
+    var elements = document.querySelectorAll('a[href^="tel:"], span, p, div, h1, h2, h3, h4, h5, h6, li, td, button');
+    elements.forEach(function(element) {
+      if (element.tagName === "A" && element.href && element.href.startsWith("tel:")) {
+        element.href = "tel:" + trackingNumber;
+        element.textContent = formatPhoneNumber(trackingNumber);
+      } else if (element.children.length === 0 && element.textContent.match(phoneRegex)) {
+        element.textContent = element.textContent.replace(phoneRegex, formatPhoneNumber(trackingNumber));
+      }
+    });
+  }
+  
+  function formatPhoneNumber(number) {
+    var cleaned = number.replace(/\D/g, "");
+    if (cleaned.length === 11 && cleaned.charAt(0) === "1") {
+      cleaned = cleaned.substr(1);
+    }
+    return "(" + cleaned.substr(0,3) + ") " + cleaned.substr(3,3) + "-" + cleaned.substr(6);
+  }
+  
+  function trackCallClick() {
+    if (typeof gtag !== "undefined") {
+      gtag("event", "click_to_call", {
+        "event_category": "engagement",
+        "event_label": trackingNumber,
+        "value": websiteId
+      });
+    }
+    fetch("/track/call-click", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        websiteId: websiteId,
+        trackingNumber: trackingNumber,
+        timestamp: new Date().toISOString()
+      })
+    }).catch(function(){});
+  }
+  
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", replacePhoneNumbers);
+  } else {
+    replacePhoneNumbers();
+  }
+  
+  document.addEventListener("click", function(e) {
+    var el = e.target;
+    while (el && el.tagName !== "A") el = el.parentElement;
+    if (el && el.href && el.href.startsWith("tel:")) trackCallClick();
+  });
+})();
+</script>
 </body>
 </html>
